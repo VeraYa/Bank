@@ -1,0 +1,19 @@
+.button {
+    border: none;
+    border-radius: 16px;
+    padding: 16px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+  
+    @media (max-width: 650px) {
+      padding: 10px;
+    }
+  
+    &:hover {
+      background-color: var(--accent-hover);
+    }
+  }

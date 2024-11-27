@@ -1,0 +1,69 @@
+:root {
+    --primary: #000000;
+    --primary-invert: #fff;
+    --secondary: #1c1c1e;
+    --muted: #808080;
+    --muted-light: #00000008;
+    --info: #2d3748;
+    --success: #008000;
+    --warning: #ff0000;
+    --error: #ff5631;
+    --cancel: #d93737;
+    --accent: #003cff;
+    --accent-hover: #7796c0;
+    --active: #b2a35f;
+    --disabled-text: #222222;
+
+    --bg-primary: #f5f4ff;
+
+    --ff-main: 'Ubuntu', 'Arial', serif;
+    --ff-features: 'Rubik', 'Arial', serif;
+    --ff-contact: 'Nunito-Sans', 'Arial', serif;
+
+    --fs-main: 16px;
+    --fs-s: 14px;
+    --fs-m: 20px;
+    --fs-l: 24px;
+    --fs-xl: 30px;
+    --fs-2xl: 35px;
+    --fs-3xl: 48px;
+
+    --lh-m: 25px;
+    --lh-l: 30px;
+    --lh-xl: 50px;
+    --lh-main: 1;
+    --lh-percent-s: 1.12;
+    --lh-percent-m: 1.474;
+
+    --ls-main: 0.02em;
+
+    --gap-small-s: 8px;
+    --gap-small-m: 12px;
+    --gap-small-l: 16px;
+    --gap-small-xl: 20px;
+    --gap-medium-m: 32px;
+    --gap-medium-l: 36px;
+    --gap-medium-xl: 40px;
+    --gap-large-s: 48px;
+    --gap-large-l: 96px;
+
+    --radius-m: 10px;
+    --radius-2xl: 28px;
+
+    --animation-main: 0.09s;
+
+    --desktop: 1300px;
+    --tablet: 920px;
+    --mobile: 500px;
+
+    --app-height: 100vh;
+    --app-width: calc(var(--desktop) + var(--gap-small-xl) * 2);
+
+    @media (max-width: 500px) {
+        --fs-3xl: 42px;
+    }
+
+    @media (max-width: 410px) {
+        --fs-3xl: 40px;
+    }
+}

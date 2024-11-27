@@ -1,0 +1,24 @@
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: var(--lh-xl);
+    text-align: center;
+
+    &__title {
+        font-size: var(--fs-xl);
+        font-weight: 500;
+        color: var(--world-title);
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        color: var(--secondary);
+        margin-bottom: 48px;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 1060px;
+    }
+}
