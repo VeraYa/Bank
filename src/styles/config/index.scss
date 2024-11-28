@@ -1,6 +1,6 @@
-@import 'normalize';
-@import 'fonts';
-@import 'variables';
+@use 'normalize' as *;
+@use 'fonts' as *;
+@use 'variables' as *;
 
 body {
   font-family: var(--ff-main);
@@ -21,6 +21,7 @@ body {
 .container {
   width: 100%;
   max-width: var(--app-width);
+  min-width: 350px;
   padding: 0 var(--gap-small-xl);
   color: var(--primary);
   margin: 5px auto 0;

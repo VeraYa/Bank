@@ -121,12 +121,13 @@
 
     &__link {
         grid-area: link;
+        margin-top: 28px;
+        width: max-content;
         font-size: var(--fs-m);
         color: var(--primary-invert);
         line-height: var(--lh-percent-s);
         transition: color var(--animation-main);
-        margin-top: 28px;
-        width: max-content;
+        cursor: pointer; 
 
         &:hover {
             color: var(--logo);

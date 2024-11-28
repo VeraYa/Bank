@@ -1,5 +1,5 @@
 :root {
-    --primary: #000000;
+    --primary: #333;
     --primary-invert: #fff;
     --secondary: #1c1c1e;
     --muted: #808080;
@@ -13,6 +13,8 @@
     --accent-hover: #7796c0;
     --active: #b2a35f;
     --disabled-text: #222222;
+    --button-bg: #007bff;
+    --logo-color: #b4387a; 
 
     --bg-primary: #f5f4ff;
 
@@ -45,12 +47,13 @@
     --gap-medium-l: 36px;
     --gap-medium-xl: 40px;
     --gap-large-s: 48px;
+    --gap-large-m: 80px;
     --gap-large-l: 96px;
 
     --radius-m: 10px;
     --radius-2xl: 28px;
 
-    --animation-main: 0.09s;
+    --animation-main: 0.2s;
 
     --desktop: 1300px;
     --tablet: 920px;

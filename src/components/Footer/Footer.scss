@@ -35,7 +35,7 @@
     margin-bottom: 6px;
 
     &:hover {
-      color: #b4387a;
+      color: var(--logo-color);
     }
   }
 
@@ -45,7 +45,7 @@
     transition: color var(--animation-main);
 
     &:hover {
-      color: #b4387a;
+      color: var(--logo-color);
     }
   }
 

@@ -59,6 +59,11 @@
     background-repeat: no-repeat;
     outline: none;
 
+    &::placeholder {
+      font-family: var(--ff-contact);
+      color: #9092B0;
+    }
+
     @media (max-width: 340px) {
       font-size: 15px;
     }
