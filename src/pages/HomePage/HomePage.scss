@@ -1,0 +1,6 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-large-s);
+    font-family: var(--ff-main);
+}
