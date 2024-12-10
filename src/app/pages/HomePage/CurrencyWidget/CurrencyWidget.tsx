@@ -1,13 +1,28 @@
+import { AppDispatch, RootState } from "@store/store";
 import "./CurrencyWidget.scss";
-import React from 'react';
-import { useExchangeRates } from "./FetchRates";
-import BankIcon from '@assets/icons/bank.svg';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import BankIcon from '@assets/icons/bank.svg'
+import { ExchangeRate, fetchExchangeRates } from "@store/slices/currencySlice";
 
 export const CurrencyWidget: React.FC = () => {
+  const dispatch = useDispatch<AppDispatch>();
+  const { rates, loading } = useSelector((state: RootState) => state.currency);
+
   const baseCurrency = 'RUB';
   const refreshInterval = 15 * 60 * 1000;
-  const { rates, loading } = useExchangeRates(baseCurrency, refreshInterval);
-  const currentDate = new Date().toLocaleDateString()
+
+  useEffect(() => {
+    dispatch(fetchExchangeRates(baseCurrency));
+    const interval = setInterval(() => {
+      dispatch(fetchExchangeRates(baseCurrency));
+    }, refreshInterval);
+
+    return () => clearInterval(interval);
+  }, [dispatch, baseCurrency, refreshInterval]);
+
+  const currentDate = new Date().toLocaleDateString();
+
   return (
     <section className="currency">
       <h2 className="currency__title">Exchange rate in internet bank</h2>
@@ -17,7 +32,7 @@ export const CurrencyWidget: React.FC = () => {
       ) : (
         <div id="currency-container" className="currency__container">
           <ul className="currency__list">
-            {rates.map(({ code, rate }) => (
+            {rates.map(({ code, rate }: ExchangeRate) => (
               <li key={code} className="currency__list-item">
                 <h2 className="currency__name">{code}:</h2>
                 <p>{rate !== 'N/A' ? (1 / (rate as number)).toFixed(2) : 'N/A'}</p>
@@ -34,6 +49,3 @@ export const CurrencyWidget: React.FC = () => {
     </section>
   );
 };
-
-
-
