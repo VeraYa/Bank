@@ -1,13 +1,13 @@
-import { AppDispatch, RootState } from "@store/store";
+import { TAppDispatch, TRootState } from "@store/store";
 import "./CurrencyWidget.scss";
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import BankIcon from '@assets/icons/bank.svg'
-import { ExchangeRate, fetchExchangeRates } from "@store/slices/currencySlice";
+import { TExchangeRate, fetchExchangeRates } from "@store/slices/currencySlice";
 
 export const CurrencyWidget: React.FC = () => {
-  const dispatch = useDispatch<AppDispatch>();
-  const { rates, loading } = useSelector((state: RootState) => state.currency);
+  const dispatch = useDispatch<TAppDispatch>();
+  const { rates, loading } = useSelector((state: TRootState) => state.currency);
 
   const baseCurrency = 'RUB';
   const refreshInterval = 15 * 60 * 1000;
@@ -32,7 +32,7 @@ export const CurrencyWidget: React.FC = () => {
       ) : (
         <div id="currency-container" className="currency__container">
           <ul className="currency__list">
-            {rates.map(({ code, rate }: ExchangeRate) => (
+            {rates.map(({ code, rate }: TExchangeRate) => (
               <li key={code} className="currency__list-item">
                 <h2 className="currency__name">{code}:</h2>
                 <p>{rate !== 'N/A' ? (1 / (rate as number)).toFixed(2) : 'N/A'}</p>

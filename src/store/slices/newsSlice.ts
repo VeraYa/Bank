@@ -4,7 +4,7 @@ import axios from "axios";
 const API_KEY = '1847da4adfe34b4babc5ad34051f63bf'
 const API_URL = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${API_KEY}`
 
-type NewsArticle = {
+type TNewsArticle = {
   source: {
     id: string | null;
     name: string;
@@ -18,25 +18,25 @@ type NewsArticle = {
   content: string;
 }
 
-export type NewsState = {
-  news: NewsArticle[];
+export type TNewsState = {
+  news: TNewsArticle[];
   loading: boolean;
   error: string | null;
 }
 
-const initialState: NewsState = {
+const initialState: TNewsState = {
   news: [],
   loading: false,
   error: null,
 };
 
-export const fetchNews = createAsyncThunk<NewsArticle[], void, { rejectValue: string }>(
+export const fetchNews = createAsyncThunk<TNewsArticle[], void, { rejectValue: string }>(
   "news/fetchNews",
   async (_, { rejectWithValue }) => {
     try {
       const response = await axios.get(`${API_URL}`);
 
-      const articles = response.data.articles as NewsArticle[];
+      const articles = response.data.articles as TNewsArticle[];
       return articles.filter(
         (article) => article.urlToImage && !/<[^>]*>/.test(article.description || "")
       );
@@ -56,7 +56,7 @@ const newsSlice = createSlice({
         state.loading = true;
         state.error = null;
       })
-      .addCase(fetchNews.fulfilled, (state, action: PayloadAction<NewsArticle[]>) => {
+      .addCase(fetchNews.fulfilled, (state, action: PayloadAction<TNewsArticle[]>) => {
         state.loading = false;
         state.news = action.payload;
       })

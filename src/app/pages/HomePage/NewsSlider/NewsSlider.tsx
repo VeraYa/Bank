@@ -2,13 +2,13 @@ import React, { useEffect, useState, useRef } from "react";
 import { useSelector } from "react-redux";
 import "./NewsSlider.scss";
 import { useAppDispatch } from "@store/hooks";
-import { RootState } from "@store/store";
+import { TRootState } from "@store/store";
 import { fetchNews } from "@store/slices/newsSlice";
 import SliderIcon from "@assets/icons/slider-btn.svg?react";
 
 export const NewsSlider: React.FC = () => {
     const dispatch = useAppDispatch();
-    const { news, loading, error } = useSelector((state: RootState) => state.news);
+    const { news, loading, error } = useSelector((state: TRootState) => state.news);
     const [currentIndex, setCurrentIndex] = useState(0);
     const sliderRef = useRef<HTMLDivElement>(null);
     const [cardWidth, setCardWidth] = useState(0);
@@ -60,10 +60,7 @@ export const NewsSlider: React.FC = () => {
             <div className="news__slider slider" ref={sliderRef}>
                 <div
                     className="slider__content"
-                    style={{
-                        transform: `translateX(-${currentIndex * cardWidth}px)`,
-                        transition: "transform 0.4s ease",
-                    }}
+                    style={{transform: `translateX(-${currentIndex * cardWidth}px)`}}
                 >
                     {news.map((item, index) => (
                         <a

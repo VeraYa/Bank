@@ -1,5 +1,18 @@
-import Logo  from '@assets/icons/logo.svg';
+import Logo from '@assets/icons/logo.svg';
 import './Footer.scss';
+
+const navLinks = [
+  "About bank",
+  "Ask a Question",
+  "Quality of service",
+  "Requisites",
+  "Press center",
+  "Bank career",
+  "Investors",
+  "Analytics",
+  "Business and processes",
+  "Compliance and business ethics",
+];
 
 export const Footer = () => {
   return (
@@ -14,16 +27,9 @@ export const Footer = () => {
         </a>
         <nav className="footer__nav">
           <ul className="footer__nav-list">
-            <li className="footer__nav-link">About bank</li>
-            <li className="footer__nav-link">Ask a Question</li>
-            <li className="footer__nav-link">Quality of service</li>
-            <li className="footer__nav-link">Requisites</li>
-            <li className="footer__nav-link">Press center</li>
-            <li className="footer__nav-link">Bank career</li>
-            <li className="footer__nav-link">Investors</li>
-            <li className="footer__nav-link">Analytics</li>
-            <li className="footer__nav-link">Business and processes</li>
-            <li className="footer__nav-link">Compliance and business ethics</li>
+            {navLinks.map((link, index) => (
+              <li key={index} className="footer__nav-link">{link}</li>
+            ))}
           </ul>
         </nav>
         <p className="footer__info">

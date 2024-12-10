@@ -4,25 +4,25 @@ import axios from 'axios';
 const API_KEY = '3039bc93e4ce2d24ac86f496';
 const API_URL = `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/`;
 
-export type ExchangeRate = {
+export type TExchangeRate = {
   code: string;
   rate: number | string;
 };
 
-export type CurrencyState = {
-  rates: ExchangeRate[];
+export type TCurrencyState = {
+  rates: TExchangeRate[];
   loading: boolean;
   error: string | null;
 }
 
-const initialState: CurrencyState = {
+const initialState: TCurrencyState = {
   rates: [],
   loading: false,
   error: null,
 };
 
 export const fetchExchangeRates = createAsyncThunk<
-  ExchangeRate[],
+  TExchangeRate[],
   string, 
   { rejectValue: string } 
 >(
@@ -58,7 +58,7 @@ const currencySlice = createSlice({
       })
       .addCase(
         fetchExchangeRates.fulfilled,
-        (state, action: PayloadAction<ExchangeRate[]>) => {
+        (state, action: PayloadAction<TExchangeRate[]>) => {
           state.rates = action.payload;
           state.loading = false;
         }
