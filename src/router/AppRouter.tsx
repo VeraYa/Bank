@@ -1,8 +1,8 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { NotFound } from '../pages/NotFound/NotFound';
-import { CreditCard } from '../pages/CreditCard/CreditCard';
-import { HomePage } from '../pages/HomePage/HomePage';
+import { NotFound } from '../app/pages/NotFound/NotFound';
+import { CreditCard } from '../app/pages/CreditCard/CreditCard';
+import { HomePage } from '../app/pages/HomePage/HomePage';
 
 export const AppRouter: React.FC = () => {
   return (

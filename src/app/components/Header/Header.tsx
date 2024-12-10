@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
-import { Button } from '../Button/Button'
 import './Header.scss'
 import { useState } from 'react';
+import { Button } from '@ui/Button/Button';
 
 type TMenu = {
   id: number;
