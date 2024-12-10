@@ -1,4 +1,4 @@
-import map from '../../../assets/icons/map.svg';
+import MapIcon from '@assets/icons/map.svg';
 import './Map.scss';
 
 export const Map = () => {
@@ -6,7 +6,7 @@ export const Map = () => {
         <section className="map">
             <h2 className="map__title">You can use our services anywhere in the world</h2>
             <h3 className="map__subtitle">Withdraw and transfer money online through our application</h3>
-            <img className="map__image" src={map} alt="map" />
+            <img className="map__image" src={MapIcon} alt="map" />
         </section>
     );
 };

@@ -1,7 +1,7 @@
 import "./CurrencyWidget.scss";
 import React from 'react';
-import BankIcon from '../../../assets/icons/bank.svg'
 import { useExchangeRates } from "./FetchRates";
+import BankIcon from '@assets/icons/bank.svg';
 
 export const CurrencyWidget: React.FC = () => {
   const baseCurrency = 'RUB';

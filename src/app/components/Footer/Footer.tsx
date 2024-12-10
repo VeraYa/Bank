@@ -1,11 +1,11 @@
+import Logo  from '@assets/icons/logo.svg';
 import './Footer.scss';
-import logo from '../../assets/icons/logo.svg';
 
 export const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__content">
-        <img className='footer__logo' src={logo} alt="Neoflex Logo" />
+        <img className='footer__logo' src={Logo} alt="Neoflex Logo" />
         <a href="tel:+74959842513" className="footer__phone">
           +7 (495) 984 25 13
         </a>
