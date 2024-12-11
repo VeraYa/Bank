@@ -1,3 +1,3 @@
-import { RootState } from './store'; 
+import { TRootState } from './store'; 
 
-export type AppState = RootState;
+export type AppState = TRootState;
