@@ -1,7 +1,6 @@
+import Email from '@assets/icons/email.svg';
+import MessageIcon from '@assets/icons/message.svg';
 import './Support.scss';
-import MessageIcon from '../../../assets/icons/message.svg';
-import MailIcon from '../../../assets/icons/email.svg';
-
 export const Support = () => {
   return (
     <section className="support">
@@ -12,7 +11,7 @@ export const Support = () => {
       <h3 className="support__subtitle">Bank News</h3>
       <form action="" method="post" className="support__form">
         <label htmlFor="email" className='support__label'>
-          <img className="support__icon" src={MailIcon} alt="Mail Icon" />
+          <img className="support__icon" src={Email} alt="Mail Icon" />
         </label>
         <input
           type="email"

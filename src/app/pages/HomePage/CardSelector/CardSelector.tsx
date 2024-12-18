@@ -1,10 +1,7 @@
 import React from "react";
 import "./CardSelector.scss";
-import { Button } from "../../../components/Button/Button";
-import card1 from '../../../assets/images/cardImage1.jpg'
-import card2 from '../../../assets/images/cardImage2.jpg'
-import card3 from '../../../assets/images/cardImage3.jpg'
-import card4 from '../../../assets/images/cardImage4.jpg'
+import { Button } from "@ui/Button/Button";
+import { card1, card2, card3, card4 } from "@assets/index";
 
 export const CardSelector: React.FC = () => {
 
