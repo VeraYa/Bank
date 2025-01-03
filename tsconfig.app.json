@@ -5,6 +5,7 @@
     "paths": {
       "@components/*": ["app/components/*"],
       "@pages/*": ["app/pages/*"],
+      "@widgets/*": ["app/widgets/*"],
       "@styles/*": ["styles/*"],
       "@store/*": ["store/*"],
       "@assets/*": ["common/assets/*"],
