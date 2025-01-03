@@ -1,0 +1,36 @@
+.rates-and-conditions {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+  font-weight: 500;
+
+  &__row {
+    &:not(:first-child) {
+      border-top: 1px solid var(--info-separator);
+    }
+  }
+
+  &__col {
+    padding: 24px 0;
+
+    &:nth-child(2) {
+      color: var(--info-muted);
+    }
+  }
+}
+
+@media (min-width: 920px) {
+  .rates-and-conditions__col {
+    &:nth-child(1) {
+      width: 326px;
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  .rates-and-conditions__col {
+    &:nth-child(1) {
+      padding-right: 40px;
+    }
+  }
+}

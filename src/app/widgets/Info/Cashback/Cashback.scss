@@ -1,0 +1,41 @@
+.cashback {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: var(--gap-medium-xl);
+  line-height: var(--lh-percent-m);
+  margin-top: 32px;
+  &__card {
+    height: 163.2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: var(--radius-2xl);
+    padding: 32px;
+    background: var(--bg-card-1);
+    box-shadow: var(--shadow-card);
+    &:nth-child(2n) {
+      background: var(--bg-card-3);
+    }
+  }
+  &__title {
+    color: var(--info-muted);
+  }
+  &__description {
+    font-size: var(--fs-large-s);
+    font-size: 36px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1000px) {
+  .cashback {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .cashback {
+    grid-template-columns: 1fr;
+  }
+}

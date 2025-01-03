@@ -1,0 +1,16 @@
+.info {
+    margin-bottom: 48px;
+}
+
+@media (max-width: 600px) {
+    .info__tabs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--gap-small-l);
+        border-bottom: 2px solid var(--muted-light);
+
+        &::after {
+            display: none;
+        }
+    }
+}

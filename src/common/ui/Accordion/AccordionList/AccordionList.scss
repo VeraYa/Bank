@@ -1,0 +1,13 @@
+.accordion-list__title {
+  margin: 32px 0;
+  font-size: var(--fs-xl);
+  line-height: var(--lh-percent-m);
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  .accordion-list__title {
+    font-size: var(--fs-l);
+    text-align: center;
+  }
+}
