@@ -14,15 +14,68 @@
     --active: #b2a35f;
     --disabled-text: #222222;
     --button-bg: #007bff;
-    --logo-color: #b4387a; 
+    --logo-color: #b4387a;
 
     --bg-primary: #f5f4ff;
 
+    // Отдельные компоненты
+
+    --nav-primary: #1d1929;
+    --nav-active: #b2a35f;
+    --input-title: #1a202c;
+    --input-border: #80808033;
+    --tabs: #7b7454;
+    --checkbox: #3182ce;
+    --skeleton: #8080801f;
+    --modal-close-button: #33363f;
+    --payment-table-head-text: #4a5568;
+    --payment-table-body-text: #1a202c;
+    --payment-table-border: #e2e8f0;
+
+    --bg-card-1: #eaecee;
+    --bg-card-2: #7f92acb3;
+    --bg-card-3: #88b3b899;
+    --bg-input: #f9f5e3;
+    --bg-divider: #d9d9d9;
+    --bg-step: #f9f5e3;
+
+    // Отдельные секции
+
+    --not-found-info: #4b4b4b;
+
+    --features-title: #0b132a;
+    --features-muted: #4f5665;
+
+    --world-title: #1c1c1c;
+
+    --subscribe-accent: #eb801d;
+    --subscribe-button: #686df1;
+    --subscribe-muted: #9092b0;
+
+    --suggestion-muted: #3d3d3d;
+
+    --info-border: #e2e8f0;
+    --info-separator: #7f92ac;
+    --info-muted: #434343;
+
+    --prescoring-muted: #786d6d;
+    --prescoring-bar: #e2e8f0;
+
+    --suggestion-bg: linear-gradient(180.8deg,
+            rgba(203, 213, 224, 0.624) 34.33%,
+            rgba(254, 235, 200, 0.56) 64.27%);
+
+    --suggestion-muted: #3d3d3d;
+    --shadow-card: 0px 2px 4px 0px #00000033, 0px 0px 8px 0px #00000014;
+
+    // fonts
+    
     --ff-main: 'Ubuntu', 'Arial', serif;
     --ff-features: 'Rubik', 'Arial', serif;
     --ff-contact: 'Nunito-Sans', 'Arial', serif;
 
     --fs-main: 16px;
+    --fs-xs: 12px;
     --fs-s: 14px;
     --fs-m: 20px;
     --fs-l: 24px;
@@ -30,6 +83,7 @@
     --fs-2xl: 35px;
     --fs-3xl: 48px;
 
+    --lh-s: 23px;
     --lh-m: 25px;
     --lh-l: 30px;
     --lh-xl: 50px;
@@ -43,14 +97,21 @@
     --gap-small-m: 12px;
     --gap-small-l: 16px;
     --gap-small-xl: 20px;
+    --gap-medium-s: 24px;
     --gap-medium-m: 32px;
     --gap-medium-l: 36px;
     --gap-medium-xl: 40px;
     --gap-large-s: 48px;
     --gap-large-m: 80px;
     --gap-large-l: 96px;
+    --gap-large-xl: 214px;
 
+    --radius-checkbox: 2px;
+    --radius-xs: 6px;
+    --radius-s: 8px;
     --radius-m: 10px;
+    --radius-l: 16px;
+    --radius-xl: 20px;
     --radius-2xl: 28px;
 
     --animation-main: 0.2s;

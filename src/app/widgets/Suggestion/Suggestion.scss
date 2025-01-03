@@ -1,0 +1,138 @@
+.suggestion {
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+    align-items: center;
+    background: var(--suggestion-bg);
+    box-shadow: var(--shadow-card);
+    border-radius: var(--radius-2xl);
+    padding: var(--gap-large-s) var(--gap-medium-m);
+    line-height: var(--lh-percent-s);
+    letter-spacing: var(--ls-main);
+    margin-bottom: 48px;
+
+    &__button {
+        background-color: var(--button-bg);
+        padding: 16px;
+    }
+
+    &__content {
+        max-width: 650px;
+    }
+
+    &__title {
+        font-size: var(--fs-3xl);
+        line-height: var(--lh-main);
+        font-weight: bold;
+        color: var(--primary-invert);
+        margin-bottom: 48px;
+    }
+
+    &__link {
+        border-radius: 8px;
+    }
+
+    &__info {
+        color: var(--info);
+        margin-bottom: 32px;
+        max-width: 515px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: var(--gap-small-xl);
+        align-items: center;
+    }
+
+    &__terms {
+        display: flex;
+        gap: var(--gap-large-m);
+        margin-bottom: 32px;
+    }
+
+    &__term {
+        display: flex;
+        flex-direction: column;
+        color: var(--suggestion-muted);
+        gap: 8px;
+
+        &--title {
+            font-size: var(--fs-m);
+            font-weight: bold;
+        }
+
+        &--subtitle {
+            font-weight: medium;
+        }
+    }
+
+    &__img {
+        width: 380px;
+        margin: 0 auto;
+        border-radius: var(--radius-xl);
+
+        &--inner {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .suggestion__img {
+        width: 320px;
+    }
+}
+
+@media (max-width: 950px) {
+    .suggestion {
+        justify-content: center;
+
+        &__img {
+            display: none;
+        }
+
+        &__img--inner {
+            display: block;
+            width: 250px;
+        }
+
+        &__wrapper {
+            margin-bottom: 48px;
+        }
+    }
+}
+
+@media (max-width: 720px) {
+    .suggestion__terms {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .suggestion__wrapper {
+        gap: var(--gap-medium-m);
+        margin-bottom: 68px;
+    }
+}
+
+@media (max-width: 599px) {
+    .suggestion {
+        text-align: center;
+
+        &__wrapper {
+            flex-direction: column-reverse;
+        }
+
+        &__img--inner {
+            margin-bottom: 48px;
+        }
+
+        &__terms {
+            flex-direction: column;
+            gap: var(--gap-medium-m);
+        }
+
+        &__info {
+            margin: 0;
+        }
+    }
+}
