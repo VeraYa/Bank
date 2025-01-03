@@ -9,7 +9,7 @@ export const CardSelector: React.FC = () => {
     <section className="card-selector">
       <div className="card-selector__left">
         <h1 className="card-selector__title">Choose the design you like and apply for card right now</h1>
-        <Button className="card-selector__btn">Choose the card</Button>
+        <Button theme="accent" className="card-selector__btn">Choose the card</Button>
       </div>
       <div className="card-selector__right">
         <img src={card1} alt='Card design' />

@@ -47,7 +47,7 @@ export const Header = () => {
             </li>
           ))}
         </ul>
-        <Button className="header__btn">Online Bank</Button>
+        <Button theme="accent" className="header__btn">Online Bank</Button>
         <div
           className={`burger ${isMenuOpen ? 'burger--open' : ''}`}
           onClick={toggleMenu}

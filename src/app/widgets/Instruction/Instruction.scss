@@ -1,0 +1,31 @@
+.instruction {
+    text-align: center;
+    margin-bottom: 48px;
+
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: var(--lh-percent-m);
+        margin-bottom: 14px;
+    }
+
+    &__list {
+        li:nth-child(1) {
+            max-width: 334px;
+        }
+
+        li:nth-child(2) {
+            max-width: 385px;
+        }
+
+        li:nth-child(3) {
+            max-width: 419px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .instruction__title {
+        margin-bottom: 32px;
+    }
+}

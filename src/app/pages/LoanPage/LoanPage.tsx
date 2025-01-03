@@ -1,5 +1,6 @@
 import '@styles/config/index.scss'
 import { Info } from '@widgets/Info/Info'
+import { Instruction } from '@widgets/Instruction/Instruction'
 import { Suggestion } from '@widgets/Suggestion/Suggestion'
 
 export const LoanPage = () => {
@@ -7,6 +8,7 @@ export const LoanPage = () => {
     <main className="loan page">
       <Suggestion />
       <Info/>
+      <Instruction/>
     </main>
   )
 }

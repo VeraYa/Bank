@@ -7,6 +7,10 @@
     &__left {
         width: 612px;
         max-width: 100%;
+
+        .card-selector__btn {
+            border-radius: var(--radius-l);
+        }
     }
 
     &__title {
@@ -18,9 +22,7 @@
         color: var(--secondary);
     }
 
-    &__btn {
-        background-color: #007bff;
-    }
+    
 
     &__right {
         display: grid;

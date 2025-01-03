@@ -1,0 +1,24 @@
+.divider {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-medium-l);
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-divider);
+    height: 48px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: var(--lh-percent-main);
+    font-weight: bold;
+  }
+  &__item {
+    height: 2px;
+    width: 100%;
+    opacity: 20%;
+    border: none;
+    background: var(--muted);
+  }
+}
