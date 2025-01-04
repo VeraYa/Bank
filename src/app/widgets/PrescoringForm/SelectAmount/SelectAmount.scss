@@ -1,0 +1,22 @@
+.select-amount {
+  --left-side: 0%;
+  --right-side: 100%;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 164px;
+  padding: 24px;
+  border: 1px solid var(--border-select);
+  border-radius: var(--radius-s);
+  width: 100%;
+
+  &__label {
+    margin-bottom: 20px;
+  }
+
+  &__number {
+    max-width: 220px;
+    margin-bottom: 10px;
+  }
+}

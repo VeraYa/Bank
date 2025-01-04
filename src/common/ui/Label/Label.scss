@@ -1,0 +1,10 @@
+.label {
+  position: relative;
+  display: inline;
+  &--required::after {
+    content: '*';
+    color: var(--warning);
+    position: absolute;
+    transform: translate(50%);
+  }
+}

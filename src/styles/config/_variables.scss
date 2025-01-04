@@ -18,6 +18,9 @@
 
     --bg-primary: #f5f4ff;
 
+    --border-select: #5b35d5;
+    --border-accent: var(--accent);
+
     // Отдельные компоненты
 
     --nav-primary: #1d1929;
@@ -69,7 +72,7 @@
     --shadow-card: 0px 2px 4px 0px #00000033, 0px 0px 8px 0px #00000014;
 
     // fonts
-    
+
     --ff-main: 'Ubuntu', 'Arial', serif;
     --ff-features: 'Rubik', 'Arial', serif;
     --ff-contact: 'Nunito-Sans', 'Arial', serif;

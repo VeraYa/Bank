@@ -1,3 +1,4 @@
+import { Prescoring } from '@widgets/Prescoring/Prescoring'
 import '@styles/config/index.scss'
 import { Info } from '@widgets/Info/Info'
 import { Instruction } from '@widgets/Instruction/Instruction'
@@ -9,6 +10,7 @@ export const LoanPage = () => {
       <Suggestion />
       <Info/>
       <Instruction/>
+      <Prescoring/>
     </main>
   )
 }
