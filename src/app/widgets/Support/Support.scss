@@ -30,6 +30,7 @@
   }
 
   &__form {
+    position: relative;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 0 10px 20px 0 rgba(54, 58, 120, 0.1);
@@ -96,6 +97,13 @@
   &__button-icon {
     padding: 0 15px 5px 0;
   }
+}
+
+.error {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  color: red;
 }
 
 @media (max-width: 650px) {

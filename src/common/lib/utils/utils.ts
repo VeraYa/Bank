@@ -26,6 +26,9 @@ export const numWithSpaces = (x: number) => {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ')
 }
 
+export const removeSpaces = (string: string) =>
+  string.replace(/\s+/g, "").trim();
+
 export const scrollTo = (id: string) => {
   const section = document.querySelector(`#${id}`)
   section?.scrollIntoView({ behavior: 'smooth', block: 'start' })
