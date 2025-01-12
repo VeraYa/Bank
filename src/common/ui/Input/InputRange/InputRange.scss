@@ -1,0 +1,49 @@
+@mixin thumb-style {
+  -webkit-appearance: none;
+  position: relative;
+  background: var(--border-select);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.input-range {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__range {
+    -webkit-appearance: none;
+    width: 100%;
+    background: var(--prescoring-bar);
+    height: 2px;
+    background: var(--prescoring-bar);
+    background-image: linear-gradient(var(--border-select), var(--border-select));
+    background-repeat: no-repeat;
+
+    &::-webkit-slider-thumb {
+      @include thumb-style();
+    }
+
+    &::-moz-range-thumb {
+      @include thumb-style();
+    }
+  }
+
+  &__min,
+  &__max {
+    position: absolute;
+    bottom: -8px;
+    transform: translateY(100%);
+    color: var(--prescoring-muted);
+  }
+
+  &__max {
+    right: 0;
+  }
+  &__min {
+    left: 0;
+  }
+}

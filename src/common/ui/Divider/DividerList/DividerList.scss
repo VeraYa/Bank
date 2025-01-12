@@ -1,0 +1,20 @@
+.divider-list {
+  display: flex;
+  justify-content: space-between;
+  line-height: var(--lh-percent-m);
+  gap: var(--gap-medium-l);
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-small-xl);
+  }
+}
+
+@media (max-width: 600px) {
+  .divider-list {
+    flex-direction: column;
+    align-items: center;
+    max-width: 334px;
+    margin: 0 auto;
+  }
+}

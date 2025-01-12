@@ -1,0 +1,17 @@
+.error-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 371px;
+  line-height: var(--lh-percent-s);
+  &__title {
+    margin-bottom: 32px;
+    font-size: var(--fs-xl);
+    color: var(--error);
+    font-weight: bold;
+  }
+  &__button {
+    font-size: var(--fs-l);
+  }
+}

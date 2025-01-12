@@ -1,0 +1,41 @@
+.input-pin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-small-l);
+  &__input {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-s);
+    border: 0.5px solid var(--muted);
+    text-align: center;
+    font-size: var(--fm-m);
+    line-height: var(--lh-percent-s);
+    background: none;
+    &::placeholder {
+      font-size: var(--fs-m);
+    }
+    &:valid {
+      border: 1px solid var(--checkbox);
+    }
+    &:focus {
+      outline: 1px solid var(--checkbox);
+      border: none;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+    }
+  }
+  &__error {
+    color: var(--error);
+  }
+}
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  gap: var(--gap-small-l);
+  justify-content: center;
+}

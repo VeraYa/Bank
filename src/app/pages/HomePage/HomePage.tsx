@@ -1,11 +1,10 @@
-import { Features } from './Features/Features'
-import { Map } from './Map/Map'
-import { Support } from './Support/Support'
-import { CardSelector } from './CardSelector/CardSelector'
-import { CurrencyWidget } from './CurrencyWidget/CurrencyWidget'
+import { Support } from '@widgets/Support/Support'
+import { NewsSlider } from '@widgets/NewsSlider/NewsSlider'
+import { Map } from '@widgets/Map/Map'
+import { CurrencyWidget } from '@widgets/CurrencyWidget/CurrencyWidget'
+import { Features } from '@widgets/Features/Features'
+import { CardSelector } from '@widgets/CardSelector/CardSelector'
 import './HomePage.scss'
-import { NewsSlider } from './NewsSlider/NewsSlider'
-
 
 export const HomePage = () => {
   return (

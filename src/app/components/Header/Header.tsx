@@ -10,7 +10,7 @@ type TMenu = {
 };
 
 const menu: TMenu[] = [
-  { id: 1, name: 'Credit card', link: '/card' },
+  { id: 1, name: 'Credit card', link: '/loan' },
   { id: 2, name: 'Product', link: '/product' },
   { id: 3, name: 'Account', link: '/account' },
   { id: 4, name: 'Resources', link: '/resources' },
@@ -47,7 +47,7 @@ export const Header = () => {
             </li>
           ))}
         </ul>
-        <Button className="header__btn">Online Bank</Button>
+        <Button theme="accent" className="header__btn">Online Bank</Button>
         <div
           className={`burger ${isMenuOpen ? 'burger--open' : ''}`}
           onClick={toggleMenu}

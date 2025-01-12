@@ -1,0 +1,24 @@
+.tooltip {
+  position: relative;
+  cursor: pointer;
+  &__content {
+    position: absolute;
+    bottom: -42px;
+    left: -10px;
+    display: flex;
+    align-items: center;
+    padding: 0 7px;
+    height: 36px;
+    width: 170px;
+    letter-spacing: var(--ls-main);
+    background-color: var(--suggestion-muted);
+    font-size: var(--fs-xs);
+    color: var(--primary-invert);
+    pointer-events: none;
+    transition: opacity var(--animation-main);
+    opacity: 0;
+    &--visible {
+      opacity: 1;
+    }
+  }
+}

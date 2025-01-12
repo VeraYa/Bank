@@ -1,0 +1,9 @@
+.faq {
+  margin-top: 32px;
+  &__item {
+    border: 1px solid var(--info-border);
+    &:not(:first-child) {
+      border-top: none;
+    }
+  }
+}

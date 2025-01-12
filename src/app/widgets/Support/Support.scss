@@ -1,0 +1,140 @@
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--secondary);
+  padding: 16px 0 50px;
+  text-align: center;
+
+  &__link {
+    font-size: var(--fs-l);
+    font-weight: 700;
+    line-height: var(--lh-percent-m);
+    color: #eb801d;
+    margin-bottom: 30px;
+    letter-spacing: normal;
+  }
+
+  &__title {
+    font-size: var(--fs-xl);
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 26.82px;
+  }
+
+  &__subtitle {
+    font-size: var(--fs-xl);
+    line-height: var(--lh-percent-m);
+    font-weight: 500;
+    margin-bottom: 62px;
+  }
+
+  &__form {
+    position: relative;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px 0 rgba(54, 58, 120, 0.1);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__icon {
+    object-fit: contain;
+  }
+
+  &__input {
+    font-size: 20px;
+    line-height: 147%;
+    letter-spacing: 0.02em;
+    color: #9092b0;
+    border: none;
+    background: url("../../../../assets/images/email.svg") left;
+    background-repeat: no-repeat;
+    outline: none;
+
+    &::placeholder {
+      font-family: var(--ff-contact);
+      color: #9092B0;
+    }
+
+    @media (max-width: 340px) {
+      font-size: 15px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+    width: 161px;
+    height: 44px;
+    background: #686df1;
+    color: white;
+    font-size: 16px;
+    line-height: 127%;
+    color: #fff;
+    cursor: pointer;
+    transition:
+      transform 0.3s ease,
+      text-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &__button-icon {
+    padding: 0 15px 5px 0;
+  }
+}
+
+.error {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  color: red;
+}
+
+@media (max-width: 650px) {
+  .support__form {
+    display: grid;
+    grid-template-columns: repeat(2, align-items);
+    grid-template-rows: auto;
+    grid-template-areas:
+      'icon input'
+      'button button';
+    justify-items: center;
+    column-gap: 0;
+  }
+
+  .support__icon {
+    grid-area: icon;
+    font-size: 32px;
+  }
+
+  .support__input {
+    grid-area: input;
+    width: 100px;
+    text-align: center;
+    justify-self: start;
+  }
+
+  .support__input::placeholder {
+    font-size: var(--fs-s);
+  }
+
+  .support__button {
+    grid-area: button;
+  }
+}
