@@ -1,14 +1,16 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useSelector } from "react-redux";
 import "./NewsSlider.scss";
-import { useAppDispatch } from "@store/hooks";
-import { TRootState } from "@store/store";
+import { useAppDispatch } from "@common/lib/hooks/useAppDispatch";
 import { fetchNews } from "@store/slices/newsSlice";
 import SliderIcon from "@assets/icons/slider-btn.svg?react";
+import { IStateSchema } from "@app/providers/StoreProvider";
+
+export type RootState = IStateSchema;
 
 export const NewsSlider: React.FC = () => {
     const dispatch = useAppDispatch();
-    const { news, loading, error } = useSelector((state: TRootState) => state.news);
+    const { news, loading, error } = useSelector((state: RootState) => state.news);
     const [currentIndex, setCurrentIndex] = useState(0);
     const sliderRef = useRef<HTMLDivElement>(null);
     const [cardWidth, setCardWidth] = useState(0);

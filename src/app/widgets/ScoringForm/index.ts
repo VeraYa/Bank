@@ -1,0 +1,5 @@
+export { ScoringForm } from './ui/ScoringForm'
+export type { IScoringSchema } from './model/types/scoringSchema'
+export { scoringReducer, scoringActions } from './model/slice/scoringSlice'
+export { finishRegistration } from './model/services/finishRegistration/finishRegistration'
+export * from './model/selectors/getScoringSelectors'

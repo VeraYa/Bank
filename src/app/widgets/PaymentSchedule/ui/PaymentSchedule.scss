@@ -1,0 +1,76 @@
+.payment-schedule {
+  background: var(--primary-invert);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-card);
+  padding: 32px;
+  overflow-x: hidden;
+
+  &__header {
+    display: flex;
+    gap: 120px;
+    align-items: center;
+    margin-bottom: 76px;
+  }
+
+  &__title {
+    font-size: var(--fs-xl);
+    font-weight: bold;
+    line-height: var(--lh-percent-m);
+  }
+
+  &__table {
+    margin-bottom: 43.5px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap-medium-xl);
+  }
+
+  &__button {
+    height: 40px;
+    width: 96px;
+    padding: 0;
+    &--deny {
+      opacity: 0.8;
+    }
+  }
+
+  &__checkbox {
+    margin-left: auto;
+    &--hidden {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .payment-schedule__checkbox {
+    display: none;
+    &--hidden {
+      display: block;
+      text-align: center;
+      margin: 32px 0;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .payment-schedule__header {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .payment-schedule__wrapper {
+    overflow-x: scroll;
+  }
+}
+
+@media (max-width: 470px) {
+  .payment-schedule__header {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 16px;
+  }
+}

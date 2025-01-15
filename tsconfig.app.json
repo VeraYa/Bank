@@ -3,8 +3,10 @@
     "composite": true,
     "baseUrl": "./src",
     "paths": {
+      "@app/*": ["app/*"],
       "@components/*": ["app/components/*"],
       "@pages/*": ["app/pages/*"],
+      "@entities/*": ["app/entities/*"],
       "@widgets/*": ["app/widgets/*"],
       "@styles/*": ["styles/*"],
       "@store/*": ["store/*"],

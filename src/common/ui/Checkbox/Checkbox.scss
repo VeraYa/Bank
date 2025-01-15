@@ -1,0 +1,31 @@
+.checkbox {
+  color: var(--input-title);
+  font-size: 18px;
+  line-height: var(--percent-s);
+  font-weight: 400;
+
+  &__span {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: var(--radius-checkbox);
+    border: 1px solid var(--muted);
+    vertical-align: sub;
+    margin-right: 14px;
+    cursor: pointer;
+  }
+  &__icon {
+    opacity: 0;
+    width: 90%;
+    transition: opacity 0.1s;
+    color: var(--success);
+    transform: translate(1px, -0.75px);
+
+    &--checked {
+      opacity: 1;
+    }
+  }
+  &__input {
+    display: none;
+  }
+}

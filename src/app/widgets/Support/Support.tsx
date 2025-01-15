@@ -2,10 +2,32 @@ import Email from '@assets/icons/email.svg';
 import MessageIcon from '@assets/icons/message.svg';
 import './Support.scss';
 import { useState } from 'react';
-import { api } from '@common/api/api';
 import { FieldValues, useForm } from 'react-hook-form';
 import { removeSpaces } from '@common/lib/utils/utils';
 import { Loader } from '../../../common/ui/Loader/Loader';
+import axios, { AxiosRequestConfig } from "axios";
+
+type ApiPropsT = {
+  method: "get" | "post";
+  url: string;
+  config?: AxiosRequestConfig;
+  error_message?: string;
+};
+
+const api = async ({
+  method,
+  url,
+  config,
+  error_message,
+}: ApiPropsT) => {
+  try {
+    const response =
+      method === "get" ? await axios.get(url) : await axios.post(url, config);
+    return response;
+  } catch (error) {
+    throw new Error(`${error_message}. Error: ${error}`);
+  }
+};
 
 const BASE_URL = "http://localhost:8080";
 

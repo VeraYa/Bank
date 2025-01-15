@@ -1,0 +1,31 @@
+.schedule-table {
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  color: var(--payment-table-head-text);
+  font-size: var(--fs-xs);
+
+  &__head-col {
+    div {
+      display: flex;
+      align-items: center;
+    }
+    text-align: left;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  &__col {
+    color: var(--payment-table-body-text);
+  }
+
+  &__row {
+    height: 40.5px;
+    border-bottom: 1px solid var(--payment-table-border);
+  }
+
+  &__icon {
+    font-size: 24px;
+    color: var(--disabled-text);
+  }
+}

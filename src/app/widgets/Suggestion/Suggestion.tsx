@@ -1,7 +1,16 @@
 import cardImg from '@assets/images/cardImage1.jpg'
 import './Suggestion.scss'
-import { Tooltip } from '@ui/Tooltip/Tooltip'
-import { Button } from '@ui/Button/Button'
+import { AppLink, Button, Tooltip } from '@common/ui'
+import { scrollTo } from '@common/lib/utils/utils'
+import { useSelector } from 'react-redux'
+import { getLoanStatusApplicationId, getLoanStatusStep } from '@entities/Loan'
+import {
+  getAppRouteCode,
+  getAppRouteDocument,
+  getAppRouteScoring,
+  getAppRouteSign,
+  getRouteHome
+} from '@common/const/routes'
 
 const terms = [
   {
@@ -22,10 +31,16 @@ const terms = [
 ]
 
 export const Suggestion = () => {
+  const step = useSelector(getLoanStatusStep)
+  const applicationId = useSelector(getLoanStatusApplicationId)
 
-  const scrollTo = (id: string) => {
-    const section = document.querySelector(`#${id}`)
-    section?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  const getCurrentLink = () => {
+    if (!applicationId) return getRouteHome()
+    if (step === 3) return getAppRouteScoring(applicationId)
+    if (step === 4) return getAppRouteDocument(applicationId)
+    if (step === 5) return getAppRouteSign(applicationId)
+    if (step === 6) return getAppRouteCode(applicationId)
+    return getRouteHome()
   }
 
   return (
@@ -53,13 +68,20 @@ export const Suggestion = () => {
             </Tooltip>
           ))}
         </div>
-        <Button
-          className="suggestion__button"
-          theme="accent"
-          onClick={() => scrollTo('prescoring')}
-        >
-          Apply for card
-        </Button>
+        {step > 2 ? (
+          <AppLink className="suggestion__link" theme="accent" to={getCurrentLink()}>
+            Continue registration
+          </AppLink>
+        ) : (
+          <Button
+            className="suggestion__button"
+            theme="accent"
+            onClick={() => scrollTo('prescoring')}
+          >
+            {step === 1 && 'Apply for card'}
+            {step === 2 && 'Choose an offer'}
+          </Button>
+        )}
       </div>
       <img className="suggestion__img" src={cardImg} alt="Card" />
     </section>

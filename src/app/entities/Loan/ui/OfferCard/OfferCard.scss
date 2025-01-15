@@ -1,0 +1,51 @@
+.offer-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--primary-invert);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-card);
+  padding: 32px;
+  height: 602px;
+  transition: transform 0.4s;
+
+  &:hover {
+    outline: 2px solid var(--accent);
+
+    transform: scale(1.02);
+  }
+
+  &__img {
+    margin-bottom: 32px;
+  }
+
+  &__button {
+    width: 148px;
+    height: 48px;
+    padding: 0;
+    margin-top: auto;
+  }
+
+  &__term {
+    margin-bottom: 14px;
+  }
+
+  &__option {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__icon {
+    font-size: 24px;
+
+    &--included {
+      color: var(--success);
+    }
+
+    &--not-included {
+      color: var(--error);
+    }
+  }
+}

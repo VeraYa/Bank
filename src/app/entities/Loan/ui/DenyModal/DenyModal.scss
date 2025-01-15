@@ -1,0 +1,36 @@
+.deny-modal {
+  &__title {
+    margin-bottom: 16px;
+    font-weight: bold;
+    line-height: var(--lh-percent-m);
+    color: var(--secondary);
+  }
+
+  &__question {
+    margin-bottom: 35px;
+    line-height: var(--lh-percent-m);
+    color: var(--input-title);
+  }
+
+  &__actions {
+    display: flex;
+    gap: var(--gap-medium-xl);
+  }
+
+  &__button {
+    height: 40px;
+    width: 96px;
+    padding: 0;
+    &--deny {
+      margin-left: auto;
+      opacity: 0.8;
+    }
+    &--home {
+      width: 128px;
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

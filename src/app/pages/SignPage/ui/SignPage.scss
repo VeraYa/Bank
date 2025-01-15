@@ -1,0 +1,12 @@
+.sign-page {
+  &__message {
+    margin: 0 auto;
+    max-width: 554px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  &__info {
+    max-width: 404px;
+  }
+}
