@@ -11,8 +11,10 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
+      '@app': path.resolve(__dirname, './src/app'),
       '@components': path.resolve(__dirname, './src/app/components'),
       '@pages': path.resolve(__dirname, './src/app/pages'),
+      '@entities': path.resolve(__dirname, './src/app/entities'),
       '@widgets': path.resolve(__dirname, './src/app/widgets'),
       '@styles': path.resolve(__dirname, './src/styles'),
       '@store': path.resolve(__dirname, './src/store'),
@@ -30,5 +32,8 @@ export default defineConfig({
     host: true,
     strictPort: true,
     port: 3000,
+  },
+  define: {
+    'process.env': process.env,
   },
 })

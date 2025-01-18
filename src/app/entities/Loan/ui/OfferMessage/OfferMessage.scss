@@ -1,0 +1,13 @@
+.offer-message {
+  height: 142px;
+  padding: 24px;
+  border-radius: var(--radius-m);
+  border: 1px solid var(--border-select);
+  justify-content: start;
+}
+
+@media (max-width: 880px) {
+  .offer-message {
+    height: auto;
+  }
+}

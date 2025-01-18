@@ -1,0 +1,13 @@
+.denied {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 371px;
+  max-width: 700px;
+  gap: var(--gap-medium-m);
+  &__message {
+    height: auto;
+  }
+}

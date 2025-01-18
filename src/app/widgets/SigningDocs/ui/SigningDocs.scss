@@ -1,0 +1,75 @@
+.signing-docs {
+  padding-top: 84px;
+  line-height: var(--lh-percent-s);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: var(--fs-xl);
+    color: var(--secondary);
+  }
+
+  &__info {
+    color: var(--features-muted);
+    font-size: var(--fs-m);
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    display: flex;
+    max-width: 320px;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  &__link-info {
+    font-size: var(--fs-m);
+  }
+
+  &__icon {
+    font-size: 60px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: var(--gap-large-m);
+  }
+
+  &__button {
+    padding: 0;
+    height: 40px;
+    width: 160px;
+  }
+}
+
+@media (max-width: 570px) {
+  .signing-docs__header {
+    gap: 0;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 470px) {
+  .signing-docs__header {
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .signing-docs__actions {
+    flex-direction: column;
+    gap: 32px;
+  }
+}

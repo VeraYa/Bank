@@ -1,0 +1,10 @@
+.confirmation {
+  padding-top: 84px;
+  &__title {
+    text-align: center;
+    margin-bottom: 32px;
+    font-size: var(--fs-xl);
+    font-weight: bold;
+    line-height: var(--lh-percent-s);
+  }
+}

@@ -1,13 +1,16 @@
-import { TAppDispatch, TRootState } from "@store/store";
 import "./CurrencyWidget.scss";
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import BankIcon from '@assets/icons/bank.svg'
 import { TExchangeRate, fetchExchangeRates } from "@store/slices/currencySlice";
+import { IStateSchema } from "@app/providers/StoreProvider";
+import { AppDispatch } from "@app/providers/StoreProvider/config/store";
+
+export type RootState = IStateSchema;
 
 export const CurrencyWidget: React.FC = () => {
-  const dispatch = useDispatch<TAppDispatch>();
-  const { rates, loading } = useSelector((state: TRootState) => state.currency);
+  const dispatch = useDispatch<AppDispatch>();
+  const { rates, loading } = useSelector((state: RootState) => state.currency);
 
   const baseCurrency = 'RUB';
   const refreshInterval = 15 * 60 * 1000;
