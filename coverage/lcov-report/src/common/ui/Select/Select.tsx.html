@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">88.88% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>8/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">57.14% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/14</span>
+                <span class='fraction'>8/14</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">88.88% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>8/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -171,7 +171,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -183,22 +183,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">110x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">110x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">110x</span>
+<span class="cline-any cline-yes">422x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">110x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">110x</span>
+<span class="cline-any cline-yes">110x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -259,8 +259,8 @@ interface ISelectProps extends SelectHTMLAttributes&lt;HTMLSelectElement&gt; {
   isSubmitted?: boolean
 }
 &nbsp;
-export const Select = <span class="cstat-no" title="statement not covered" >memo(</span>
-  forwardRef&lt;HTMLSelectElement, ISelectProps&gt;(<span class="fstat-no" title="function not covered" >(p</span>rops, ref) =&gt; {
+export const Select = memo(
+  forwardRef&lt;HTMLSelectElement, ISelectProps&gt;((props, ref) =&gt; {
     const {
       className,
       label,
@@ -271,22 +271,22 @@ export const Select = <span class="cstat-no" title="statement not covered" >memo
       error,
       isSubmitted,
       ...otherProps
-    } = <span class="cstat-no" title="statement not covered" >props</span>
+    } = props
 &nbsp;
-    const optionsList = <span class="cstat-no" title="statement not covered" >useMemo(</span>
-<span class="fstat-no" title="function not covered" >      ()</span> =&gt;
-<span class="cstat-no" title="statement not covered" >        options?.map(<span class="fstat-no" title="function not covered" >({</span> value, content }) =&gt; (</span>
-<span class="cstat-no" title="statement not covered" >          &lt;option value={value} key={value}&gt;</span>
+    const optionsList = useMemo(
+      () =&gt;
+        options?.map(({ value, content }) =&gt; (
+          &lt;option value={value} key={value}&gt;
             {content}
           &lt;/option&gt;
         )),
       [options]
     )
 &nbsp;
-    const mods: Mods = <span class="cstat-no" title="statement not covered" >{ 'select--error': isSubmitted &amp;&amp; error }</span>
+    const mods: Mods = { 'select--error': isSubmitted &amp;&amp; error }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (label) {</span>
-<span class="cstat-no" title="statement not covered" >      return (</span>
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (label) {
+      return (
         &lt;div className={classNames('select-item', {}, [className])}&gt;
           &lt;Label required={required} htmlFor={name}&gt;
             {label}
@@ -334,7 +334,7 @@ export const Select = <span class="cstat-no" title="statement not covered" >memo
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-01-21T18:59:42.142Z
+                at 2025-01-22T13:51:45.961Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>

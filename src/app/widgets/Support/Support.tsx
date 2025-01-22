@@ -6,6 +6,7 @@ import { FieldValues, useForm } from 'react-hook-form';
 import { removeSpaces } from '@common/lib/utils/utils';
 import { Loader } from '../../../common/ui/Loader/Loader';
 import axios, { AxiosRequestConfig } from "axios";
+import { API_BASE_URL_MAIN } from '@common/const/api';
 
 type ApiPropsT = {
   method: "get" | "post";
@@ -29,8 +30,6 @@ const api = async ({
   }
 };
 
-const BASE_URL = "http://localhost:8080";
-
 export const Support = () => {
   const [isSubscribed, setIsSubscribed] = useState(
     Boolean(localStorage.getItem("isSubscribedToNews")),
@@ -52,7 +51,7 @@ export const Support = () => {
       setIsLoading(true);
       const result = await api({
         method: "post",
-        url: `${BASE_URL}/email`,
+        url: `${API_BASE_URL_MAIN}/email`,
         config: {
           headers: {
             "Content-Type": "application/json",
@@ -89,7 +88,12 @@ export const Support = () => {
       ) : isError ? (
         <div>Ошибка</div>
       ) : (
-        <form onSubmit={handleSubmit(handleFormSubmit)} method="post" className="support__form">
+        <form 
+          role="form"
+          onSubmit={handleSubmit(handleFormSubmit)} 
+          method="post" 
+          className="support__form"
+        >
           <label htmlFor="email" className='support__label'>
             <img className="support__icon" src={Email} alt="Mail Icon" />
           </label>

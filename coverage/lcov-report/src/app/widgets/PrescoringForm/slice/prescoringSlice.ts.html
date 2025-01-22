@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">61.53% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>8/13</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">40% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>2/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">61.53% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>8/13</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -101,70 +101,70 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { createSlice } from '@reduxjs/toolkit'
 import { IPrescoringSchema } from '../types/prescoringSchema'
 import { createLoanApplication } from '../services/createLoanApplication/createLoanApplication'
 &nbsp;
-const initialState: IPrescoringSchema = <span class="cstat-no" title="statement not covered" >{</span>
+const initialState: IPrescoringSchema = {
   error: undefined,
   isLoading: false
 }
 &nbsp;
-export const prescoringSlice = <span class="cstat-no" title="statement not covered" >createSlice({</span>
+export const prescoringSlice = createSlice({
   name: 'prescoring',
   initialState,
   reducers: {
-    resetError: <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {
-<span class="cstat-no" title="statement not covered" >      state.error = undefined</span>
+    resetError: (state) =&gt; {
+      state.error = undefined
     }
   },
-  extraReducers: <span class="fstat-no" title="function not covered" >({</span> addCase }) =&gt; {
-<span class="cstat-no" title="statement not covered" >    addCase(createLoanApplication.pending, <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {</span>
+  extraReducers: ({ addCase }) =&gt; {
+    addCase(createLoanApplication.pending, <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {
 <span class="cstat-no" title="statement not covered" >      state.error = undefined</span>
 <span class="cstat-no" title="statement not covered" >      state.isLoading = true</span>
     })
-<span class="cstat-no" title="statement not covered" >    addCase(createLoanApplication.fulfilled, <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {</span>
+    addCase(createLoanApplication.fulfilled, <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {
 <span class="cstat-no" title="statement not covered" >      state.isLoading = false</span>
     })
-<span class="cstat-no" title="statement not covered" >    addCase(createLoanApplication.rejected, <span class="fstat-no" title="function not covered" >(s</span>tate, action) =&gt; {</span>
+    addCase(createLoanApplication.rejected, <span class="fstat-no" title="function not covered" >(s</span>tate, action) =&gt; {
 <span class="cstat-no" title="statement not covered" >      state.isLoading = false</span>
 <span class="cstat-no" title="statement not covered" >      state.error = action.payload</span>
     })
   }
 })
 &nbsp;
-export const { actions: prescoringActions } = <span class="cstat-no" title="statement not covered" >prescoringSlice</span>
-export const { reducer: prescoringReducer } = <span class="cstat-no" title="statement not covered" >prescoringSlice</span>
+export const { actions: prescoringActions } = prescoringSlice
+export const { reducer: prescoringReducer } = prescoringSlice
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -172,7 +172,7 @@ export const { reducer: prescoringReducer } = <span class="cstat-no" title="stat
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-01-21T18:59:42.142Z
+                at 2025-01-22T13:51:45.961Z
             </div>
         <script src="../../../../../prettify.js"></script>
         <script>

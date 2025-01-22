@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">53.84% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>7/13</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">20% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/5</span>
+                <span class='fraction'>1/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">53.84% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/13</span>
+                <span class='fraction'>7/13</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -101,7 +101,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -110,37 +115,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { createSlice } from '@reduxjs/toolkit'
 import { ICodeSchema } from '../types/codeSchema'
 import { sendSESCode } from '../services/sendSESCode/sendSESCode'
 &nbsp;
-const initialState: ICodeSchema = <span class="cstat-no" title="statement not covered" >{</span>
+const initialState: ICodeSchema = {
   error: undefined,
   isLoading: false
 }
 &nbsp;
-export const codeSlice = <span class="cstat-no" title="statement not covered" >createSlice({</span>
+export const codeSlice = createSlice({
   name: 'code',
   initialState,
   reducers: {
@@ -148,23 +148,23 @@ export const codeSlice = <span class="cstat-no" title="statement not covered" >c
 <span class="cstat-no" title="statement not covered" >      state.error = undefined</span>
     }
   },
-  extraReducers: <span class="fstat-no" title="function not covered" >({</span> addCase }) =&gt; {
-<span class="cstat-no" title="statement not covered" >    addCase(sendSESCode.pending, <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {</span>
+  extraReducers: ({ addCase }) =&gt; {
+    addCase(sendSESCode.pending, <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {
 <span class="cstat-no" title="statement not covered" >      state.error = undefined</span>
 <span class="cstat-no" title="statement not covered" >      state.isLoading = true</span>
     })
-<span class="cstat-no" title="statement not covered" >    addCase(sendSESCode.fulfilled, <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {</span>
+    addCase(sendSESCode.fulfilled, <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {
 <span class="cstat-no" title="statement not covered" >      state.isLoading = false</span>
     })
-<span class="cstat-no" title="statement not covered" >    addCase(sendSESCode.rejected, <span class="fstat-no" title="function not covered" >(s</span>tate, action) =&gt; {</span>
+    addCase(sendSESCode.rejected, <span class="fstat-no" title="function not covered" >(s</span>tate, action) =&gt; {
 <span class="cstat-no" title="statement not covered" >      state.isLoading = false</span>
 <span class="cstat-no" title="statement not covered" >      state.error = action.payload</span>
     })
   }
 })
 &nbsp;
-export const { reducer: codeReducer } = <span class="cstat-no" title="statement not covered" >codeSlice</span>
-export const { actions: codeActions } = <span class="cstat-no" title="statement not covered" >codeSlice</span>
+export const { reducer: codeReducer } = codeSlice
+export const { actions: codeActions } = codeSlice
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -172,7 +172,7 @@ export const { actions: codeActions } = <span class="cstat-no" title="statement 
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-01-21T18:59:42.142Z
+                at 2025-01-22T13:51:45.961Z
             </div>
         <script src="../../../../../../prettify.js"></script>
         <script>

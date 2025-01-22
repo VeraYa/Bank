@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">36.84% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/19</span>
+                <span class='fraction'>7/19</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">16.66% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>1/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">36.84% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/19</span>
+                <span class='fraction'>7/19</span>
             </div>
         
             
@@ -115,62 +115,62 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { IScheduleResponse, IScheduleSchema } from '../types/schedule'
 import { getApplicationById } from '../services/getApplicatoinById/getApplicationById'
 &nbsp;
-const initialState: IScheduleSchema = <span class="cstat-no" title="statement not covered" >{</span>
+const initialState: IScheduleSchema = {
   data: undefined,
   error: undefined,
   status: undefined,
   isLoading: false
 }
 &nbsp;
-export const scheduleSlice = <span class="cstat-no" title="statement not covered" >createSlice({</span>
+export const scheduleSlice = createSlice({
   name: 'schedule',
   initialState,
   reducers: {
@@ -182,13 +182,13 @@ export const scheduleSlice = <span class="cstat-no" title="statement not covered
 <span class="cstat-no" title="statement not covered" >      state.status = undefined</span>
     }
   },
-  extraReducers: <span class="fstat-no" title="function not covered" >({</span> addCase }) =&gt; {
-<span class="cstat-no" title="statement not covered" >    addCase(getApplicationById.pending, <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {</span>
+  extraReducers: ({ addCase }) =&gt; {
+    addCase(getApplicationById.pending, <span class="fstat-no" title="function not covered" >(s</span>tate) =&gt; {
 <span class="cstat-no" title="statement not covered" >      state.error = undefined</span>
 <span class="cstat-no" title="statement not covered" >      state.status = undefined</span>
 <span class="cstat-no" title="statement not covered" >      state.isLoading = true</span>
     })
-<span class="cstat-no" title="statement not covered" >    addCase(</span>
+    addCase(
       getApplicationById.fulfilled,
 <span class="fstat-no" title="function not covered" >      (s</span>tate, action: PayloadAction&lt;IScheduleResponse&gt;) =&gt; {
 <span class="cstat-no" title="statement not covered" >        state.isLoading = false</span>
@@ -198,15 +198,15 @@ export const scheduleSlice = <span class="cstat-no" title="statement not covered
         }
       }
     )
-<span class="cstat-no" title="statement not covered" >    addCase(getApplicationById.rejected, <span class="fstat-no" title="function not covered" >(s</span>tate, action) =&gt; {</span>
+    addCase(getApplicationById.rejected, <span class="fstat-no" title="function not covered" >(s</span>tate, action) =&gt; {
 <span class="cstat-no" title="statement not covered" >      state.isLoading = false</span>
 <span class="cstat-no" title="statement not covered" >      state.error = action.payload</span>
     })
   }
 })
 &nbsp;
-export const { reducer: scheduleReducer } = <span class="cstat-no" title="statement not covered" >scheduleSlice</span>
-export const { actions: scheduleActions } = <span class="cstat-no" title="statement not covered" >scheduleSlice</span>
+export const { reducer: scheduleReducer } = scheduleSlice
+export const { actions: scheduleActions } = scheduleSlice
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -214,7 +214,7 @@ export const { actions: scheduleActions } = <span class="cstat-no" title="statem
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-01-21T18:59:42.142Z
+                at 2025-01-22T13:51:45.961Z
             </div>
         <script src="../../../../../../prettify.js"></script>
         <script>

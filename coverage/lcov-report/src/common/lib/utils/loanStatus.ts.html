@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>9/15</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">14.28% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>1/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">60% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/15</span>
+                <span class='fraction'>9/15</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -108,35 +108,35 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -149,35 +149,35 @@
 import { getDataFromLocalStorage, updateLocalStorage } from './utils'
 import { IOfferData } from '@common/types/loan'
 &nbsp;
-const setStepNumber = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(s</span>tepNumber: number) =&gt; {</span>
+const setStepNumber = <span class="fstat-no" title="function not covered" >(s</span>tepNumber: number) =&gt; {
 <span class="cstat-no" title="statement not covered" >  updateLocalStorage(LOCAL_STORAGE_LOAN_STATUS_KEY, { stepNumber })</span>
 }
 &nbsp;
-const setApplicationId = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(a</span>pplicationId: number) =&gt; {</span>
+const setApplicationId = <span class="fstat-no" title="function not covered" >(a</span>pplicationId: number) =&gt; {
 <span class="cstat-no" title="statement not covered" >  updateLocalStorage(LOCAL_STORAGE_LOAN_STATUS_KEY, { applicationId })</span>
 }
 &nbsp;
-const setOfferList = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(o</span>fferList: IOfferData[]) =&gt; {</span>
+const setOfferList = <span class="fstat-no" title="function not covered" >(o</span>fferList: IOfferData[]) =&gt; {
 <span class="cstat-no" title="statement not covered" >  updateLocalStorage(LOCAL_STORAGE_LOAN_STATUS_KEY, { offerList })</span>
 }
 &nbsp;
-const getApplicationId = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+const getApplicationId = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
 <span class="cstat-no" title="statement not covered" >  return getDataFromLocalStorage(LOCAL_STORAGE_LOAN_STATUS_KEY).applicationId</span>
 }
 &nbsp;
-const getStepNumber = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+const getStepNumber = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
 <span class="cstat-no" title="statement not covered" >  return getDataFromLocalStorage(LOCAL_STORAGE_LOAN_STATUS_KEY).stepNumber</span>
 }
 &nbsp;
-const getOfferList = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  return getDataFromLocalStorage(LOCAL_STORAGE_LOAN_STATUS_KEY).offerList</span>
+const getOfferList = () =&gt; {
+  return getDataFromLocalStorage(LOCAL_STORAGE_LOAN_STATUS_KEY).offerList
 }
 &nbsp;
-const remove = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+const remove = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
 <span class="cstat-no" title="statement not covered" >  localStorage.removeItem(LOCAL_STORAGE_LOAN_STATUS_KEY)</span>
 }
 &nbsp;
-export const loanStatus = <span class="cstat-no" title="statement not covered" >{</span>
+export const loanStatus = {
   setStepNumber,
   setApplicationId,
   getStepNumber,
@@ -193,7 +193,7 @@ export const loanStatus = <span class="cstat-no" title="statement not covered" >
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-01-21T18:59:42.142Z
+                at 2025-01-22T13:51:45.961Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>
