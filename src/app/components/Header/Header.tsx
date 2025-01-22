@@ -49,6 +49,8 @@ export const Header = () => {
         </ul>
         <Button theme="accent" className="header__btn">Online Bank</Button>
         <div
+          role="presentation"
+          aria-label=""
           className={`burger ${isMenuOpen ? 'burger--open' : ''}`}
           onClick={toggleMenu}
         >

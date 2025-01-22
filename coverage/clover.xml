@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1737575362193" clover="3.2.0">
-  <project timestamp="1737575362193" name="All files">
-    <metrics statements="952" coveredstatements="424" conditionals="324" coveredconditionals="110" methods="315" coveredmethods="103" elements="1591" coveredelements="637" complexity="0" loc="952" ncloc="952" packages="98" files="125" classes="125"/>
+<coverage generated="1737576418110" clover="3.2.0">
+  <project timestamp="1737576418110" name="All files">
+    <metrics statements="952" coveredstatements="437" conditionals="324" coveredconditionals="115" methods="315" coveredmethods="110" elements="1591" coveredelements="662" complexity="0" loc="952" ncloc="952" packages="98" files="125" classes="125"/>
     <package name="src">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="jest.d.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\jest.d.ts">
@@ -12,56 +12,56 @@
       </file>
     </package>
     <package name="src.app.components.Footer">
-      <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="Footer.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\components\Footer\Footer.tsx">
-        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="31" count="30" type="stmt"/>
       </file>
     </package>
     <package name="src.app.components.Header">
-      <metrics statements="10" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <metrics statements="10" coveredstatements="9" conditionals="6" coveredconditionals="5" methods="6" coveredmethods="5"/>
       <file name="Header.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\components\Header\Header.tsx">
-        <metrics statements="10" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
+        <metrics statements="10" coveredstatements="9" conditionals="6" coveredconditionals="5" methods="6" coveredmethods="5"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="35" count="0" type="stmt"/>
-        <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="35" count="20" type="stmt"/>
+        <line num="38" count="20" type="cond" truecount="1" falsecount="1"/>
       </file>
     </package>
     <package name="src.app.entities.Loan.model.selectors.getCodeSelectors">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="getCodeSelectors.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\selectors\getCodeSelectors\getCodeSelectors.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="4" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
       </file>
     </package>
     <package name="src.app.entities.Loan.model.selectors.getDenySelectors">
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="getDenySelectors.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\selectors\getDenySelectors\getDenySelectors.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="4" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
       </file>
     </package>
     <package name="src.app.entities.Loan.model.selectors.getDocumentsSelectors">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="getDocumentsSelectors.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\selectors\getDocumentsSelectors\getDocumentsSelectors.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="4" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
       </file>
     </package>
@@ -69,10 +69,10 @@
       <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
       <file name="getLoanStatusSelectors.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\selectors\getLoanStatusSelectors\getLoanStatusSelectors.ts">
         <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
         <line num="6" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="8" count="11" type="stmt"/>
+        <line num="8" count="13" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
       </file>
     </package>
@@ -80,17 +80,17 @@
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <file name="getOfferSelectors.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\selectors\getOfferSelectors\getOfferSelectors.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="4" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
-        <line num="6" count="11" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
       </file>
     </package>
     <package name="src.app.entities.Loan.model.services.applyOffer">
       <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="applyOffer.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\services\applyOffer\applyOffer.ts">
         <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="7" count="11" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
@@ -105,7 +105,7 @@
       <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="createDocuments.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\services\createDocuments\createDocuments.ts">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="6" count="10" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
@@ -118,7 +118,7 @@
       <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="denyApplication.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\services\denyApplication\denyApplication.ts">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="5" count="11" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
@@ -130,7 +130,7 @@
       <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="sendSESCode.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\services\sendSESCode\sendSESCode.ts">
         <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="5" count="11" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
@@ -144,7 +144,7 @@
       <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="signDocuments.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\services\signDocuments\signDocuments.ts">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="6" count="11" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
         <line num="9" count="2" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
@@ -157,64 +157,64 @@
       <metrics statements="80" coveredstatements="35" conditionals="4" coveredconditionals="0" methods="28" coveredmethods="4"/>
       <file name="codeSlice.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\slice\codeSlice.ts">
         <metrics statements="13" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
-        <line num="5" count="10" type="stmt"/>
-        <line num="10" count="10" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="23" count="6" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="26" count="6" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="33" count="10" type="stmt"/>
-        <line num="34" count="10" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
       </file>
       <file name="denySlice.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\slice\denySlice.ts">
         <metrics statements="13" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
-        <line num="5" count="10" type="stmt"/>
-        <line num="10" count="10" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="23" count="6" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="26" count="6" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="33" count="10" type="stmt"/>
-        <line num="34" count="10" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
       </file>
       <file name="documentsSlice.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\slice\documentsSlice.ts">
         <metrics statements="21" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="8" coveredmethods="1"/>
-        <line num="6" count="10" type="stmt"/>
-        <line num="11" count="10" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
-        <line num="20" count="6" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="24" count="6" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="27" count="6" type="stmt"/>
+        <line num="27" count="8" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
-        <line num="31" count="6" type="stmt"/>
+        <line num="31" count="8" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
-        <line num="35" count="6" type="stmt"/>
+        <line num="35" count="8" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="38" count="6" type="stmt"/>
+        <line num="38" count="8" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
-        <line num="45" count="10" type="stmt"/>
-        <line num="46" count="10" type="stmt"/>
+        <line num="45" count="12" type="stmt"/>
+        <line num="46" count="12" type="stmt"/>
       </file>
       <file name="loanStatusSlice.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\slice\loanStatusSlice.ts">
         <metrics statements="18" coveredstatements="4" conditionals="4" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="5" count="13" type="stmt"/>
-        <line num="10" count="13" type="stmt"/>
+        <line num="5" count="15" type="stmt"/>
+        <line num="10" count="15" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
@@ -229,26 +229,26 @@
         <line num="36" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
-        <line num="43" count="13" type="stmt"/>
-        <line num="44" count="13" type="stmt"/>
+        <line num="43" count="15" type="stmt"/>
+        <line num="44" count="15" type="stmt"/>
       </file>
       <file name="offerSlice.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\model\slice\offerSlice.ts">
         <metrics statements="15" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="1"/>
-        <line num="7" count="10" type="stmt"/>
-        <line num="13" count="10" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="26" count="6" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="30" count="6" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
-        <line num="33" count="6" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
-        <line num="40" count="10" type="stmt"/>
-        <line num="41" count="10" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
+        <line num="41" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.app.entities.Loan.model.types">
@@ -273,7 +273,7 @@
       <metrics statements="21" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="DenyModal.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\ui\DenyModal\DenyModal.tsx">
         <metrics statements="21" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="20" count="10" type="stmt"/>
+        <line num="20" count="12" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
@@ -300,7 +300,7 @@
       <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
       <file name="OfferCard.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\ui\OfferCard\OfferCard.tsx">
         <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="2"/>
-        <line num="11" count="10" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
         <line num="21" count="9" type="stmt"/>
         <line num="23" count="9" type="stmt"/>
         <line num="25" count="9" type="stmt"/>
@@ -314,7 +314,7 @@
       <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="OfferMessage.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\ui\OfferMessage\OfferMessage.tsx">
         <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="4" count="10" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
       </file>
     </package>
@@ -322,7 +322,7 @@
       <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <file name="OffersList.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\entities\Loan\ui\OffersList\OffersList.tsx">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="10" count="10" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
         <line num="11" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
@@ -457,20 +457,20 @@
       </file>
       <file name="store.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\providers\StoreProvider\config\store.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="21" count="21" type="stmt"/>
-        <line num="35" count="21" type="stmt"/>
-        <line num="38" count="21" type="stmt"/>
-        <line num="44" count="21" type="stmt"/>
+        <line num="21" count="27" type="stmt"/>
+        <line num="35" count="27" type="stmt"/>
+        <line num="38" count="27" type="stmt"/>
+        <line num="44" count="27" type="stmt"/>
       </file>
     </package>
     <package name="src.app.providers.StoreProvider.ui">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="StoreProvider.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\providers\StoreProvider\ui\StoreProvider.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="11" count="6" type="stmt"/>
-        <line num="12" count="21" type="stmt"/>
-        <line num="14" count="21" type="stmt"/>
-        <line num="16" count="21" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="12" count="27" type="stmt"/>
+        <line num="14" count="27" type="stmt"/>
+        <line num="16" count="27" type="stmt"/>
       </file>
     </package>
     <package name="src.app.providers.router.config">
@@ -770,10 +770,10 @@
       <metrics statements="25" coveredstatements="22" conditionals="8" coveredconditionals="4" methods="6" coveredmethods="4"/>
       <file name="PrescoringForm.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\PrescoringForm\PrescoringForm.tsx">
         <metrics statements="25" coveredstatements="22" conditionals="8" coveredconditionals="4" methods="6" coveredmethods="4"/>
-        <line num="18" count="6" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
-        <line num="20" count="6" type="stmt"/>
-        <line num="26" count="6" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="20" count="8" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
         <line num="27" count="20" type="stmt"/>
         <line num="34" count="20" type="stmt"/>
         <line num="41" count="20" type="stmt"/>
@@ -801,7 +801,7 @@
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="SelectAmount.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\PrescoringForm\SelectAmount\SelectAmount.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="11" count="6" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
         <line num="13" count="20" type="stmt"/>
         <line num="15" count="20" type="stmt"/>
       </file>
@@ -810,9 +810,9 @@
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="getPrescoring.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\PrescoringForm\selectors\getPrescoring\getPrescoring.ts">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="6" count="9" type="stmt"/>
         <line num="7" count="7" type="stmt"/>
       </file>
     </package>
@@ -820,7 +820,7 @@
       <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="createLoanApplication.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\PrescoringForm\services\createLoanApplication\createLoanApplication.ts">
         <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="7" count="8" type="stmt"/>
+        <line num="7" count="10" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
         <line num="15" count="2" type="stmt"/>
@@ -835,19 +835,19 @@
       <metrics statements="13" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
       <file name="prescoringSlice.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\PrescoringForm\slice\prescoringSlice.ts">
         <metrics statements="13" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="2"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="10" count="7" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
+        <line num="10" count="9" type="stmt"/>
         <line num="15" count="2" type="stmt"/>
-        <line num="19" count="7" type="stmt"/>
+        <line num="19" count="9" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="23" count="7" type="stmt"/>
+        <line num="23" count="9" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="26" count="7" type="stmt"/>
+        <line num="26" count="9" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="33" count="7" type="stmt"/>
-        <line num="34" count="7" type="stmt"/>
+        <line num="33" count="9" type="stmt"/>
+        <line num="34" count="9" type="stmt"/>
       </file>
     </package>
     <package name="src.app.widgets.PrescoringForm.storeProvider">
@@ -866,18 +866,18 @@
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
       <file name="getScheduleSelectors.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\ScheduleTable\model\selectors\getScheduleSelectors.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
-        <line num="3" count="11" type="stmt"/>
-        <line num="4" count="11" type="stmt"/>
-        <line num="5" count="11" type="stmt"/>
-        <line num="6" count="11" type="stmt"/>
-        <line num="7" count="11" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
+        <line num="4" count="13" type="stmt"/>
+        <line num="5" count="13" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
+        <line num="7" count="13" type="stmt"/>
       </file>
     </package>
     <package name="src.app.widgets.ScheduleTable.model.services.getApplicatoinById">
       <metrics statements="9" coveredstatements="8" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <file name="getApplicationById.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\ScheduleTable\model\services\getApplicatoinById\getApplicationById.ts">
         <metrics statements="9" coveredstatements="8" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
-        <line num="6" count="11" type="stmt"/>
+        <line num="6" count="13" type="stmt"/>
         <line num="11" count="2" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
@@ -892,25 +892,25 @@
       <metrics statements="19" coveredstatements="7" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="1"/>
       <file name="scheduleSlice.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\ScheduleTable\model\slice\scheduleSlice.ts">
         <metrics statements="19" coveredstatements="7" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="1"/>
-        <line num="5" count="10" type="stmt"/>
-        <line num="12" count="10" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="25" count="6" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="30" count="6" type="stmt"/>
+        <line num="30" count="8" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
         <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="40" count="6" type="stmt"/>
+        <line num="40" count="8" type="stmt"/>
         <line num="41" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
-        <line num="47" count="10" type="stmt"/>
-        <line num="48" count="10" type="stmt"/>
+        <line num="47" count="12" type="stmt"/>
+        <line num="48" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.app.widgets.ScheduleTable.model.types">
@@ -923,7 +923,7 @@
       <metrics statements="28" coveredstatements="1" conditionals="10" coveredconditionals="0" methods="12" coveredmethods="0"/>
       <file name="ScheduleTable.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\ScheduleTable\ui\ScheduleTable.tsx">
         <metrics statements="28" coveredstatements="1" conditionals="10" coveredconditionals="0" methods="12" coveredmethods="0"/>
-        <line num="14" count="10" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
@@ -957,16 +957,16 @@
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <file name="getScoringSelectors.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\ScoringForm\model\selectors\getScoringSelectors.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="5" count="9" type="stmt"/>
       </file>
     </package>
     <package name="src.app.widgets.ScoringForm.model.services.finishRegistration">
       <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
       <file name="finishRegistration.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\ScoringForm\model\services\finishRegistration\finishRegistration.ts">
         <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="7" count="7" type="stmt"/>
+        <line num="7" count="9" type="stmt"/>
         <line num="12" count="2" type="stmt"/>
         <line num="13" count="2" type="stmt"/>
         <line num="15" count="2" type="stmt"/>
@@ -981,19 +981,19 @@
       <metrics statements="13" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
       <file name="scoringSlice.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\ScoringForm\model\slice\scoringSlice.ts">
         <metrics statements="13" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
-        <line num="5" count="6" type="stmt"/>
-        <line num="10" count="6" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="10" count="8" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
-        <line num="23" count="6" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
-        <line num="26" count="6" type="stmt"/>
+        <line num="26" count="8" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
-        <line num="33" count="6" type="stmt"/>
-        <line num="34" count="6" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
+        <line num="34" count="8" type="stmt"/>
       </file>
     </package>
     <package name="src.app.widgets.ScoringForm.model.types">
@@ -1009,7 +1009,7 @@
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="ScoringForm.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\app\widgets\ScoringForm\ui\ScoringForm.tsx">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="12" count="6" type="stmt"/>
+        <line num="12" count="8" type="stmt"/>
         <line num="13" count="18" type="stmt"/>
         <line num="18" count="18" type="stmt"/>
         <line num="25" count="18" type="stmt"/>
@@ -1084,59 +1084,59 @@
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="mainApi.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\api\mainApi.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="15" type="stmt"/>
+        <line num="4" count="17" type="stmt"/>
       </file>
     </package>
     <package name="src.common.const">
       <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="0"/>
       <file name="api.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\const\api.ts">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="16" type="stmt"/>
-        <line num="2" count="16" type="stmt"/>
-        <line num="4" count="16" type="stmt"/>
-        <line num="5" count="16" type="stmt"/>
-        <line num="7" count="16" type="stmt"/>
+        <line num="1" count="18" type="stmt"/>
+        <line num="2" count="18" type="stmt"/>
+        <line num="4" count="18" type="stmt"/>
+        <line num="5" count="18" type="stmt"/>
+        <line num="7" count="18" type="stmt"/>
       </file>
       <file name="localstorage.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\const\localstorage.ts">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="13" type="stmt"/>
-        <line num="2" count="13" type="stmt"/>
-        <line num="3" count="13" type="stmt"/>
+        <line num="1" count="15" type="stmt"/>
+        <line num="2" count="15" type="stmt"/>
+        <line num="3" count="15" type="stmt"/>
       </file>
       <file name="regex.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\const\regex.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="6" type="stmt"/>
+        <line num="1" count="8" type="stmt"/>
       </file>
       <file name="routes.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\const\routes.ts">
         <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="0"/>
-        <line num="1" count="10" type="stmt"/>
-        <line num="2" count="10" type="stmt"/>
-        <line num="3" count="10" type="stmt"/>
-        <line num="5" count="10" type="stmt"/>
-        <line num="6" count="10" type="stmt"/>
-        <line num="7" count="10" type="stmt"/>
-        <line num="8" count="10" type="stmt"/>
-        <line num="10" count="10" type="stmt"/>
-        <line num="11" count="10" type="stmt"/>
-        <line num="12" count="10" type="stmt"/>
-        <line num="13" count="10" type="stmt"/>
-        <line num="15" count="10" type="stmt"/>
-        <line num="16" count="10" type="stmt"/>
-        <line num="17" count="10" type="stmt"/>
-        <line num="18" count="10" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
       </file>
       <file name="style.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\const\style.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="11" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
       </file>
     </package>
     <package name="src.common.lib.classNames">
       <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
       <file name="classNames.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\lib\classNames\classNames.ts">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="3" count="12" type="stmt"/>
-        <line num="8" count="990" type="stmt"/>
-        <line num="11" count="946" type="stmt"/>
+        <line num="3" count="14" type="stmt"/>
+        <line num="8" count="993" type="stmt"/>
+        <line num="11" count="949" type="stmt"/>
         <line num="12" count="230" type="stmt"/>
       </file>
     </package>
@@ -1144,7 +1144,7 @@
       <metrics statements="4" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
       <file name="errorHandler.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\lib\errorHandler\errorHandler.ts">
         <metrics statements="4" coveredstatements="3" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="3" count="14" type="stmt"/>
+        <line num="3" count="16" type="stmt"/>
         <line num="4" count="7" type="cond" truecount="3" falsecount="1"/>
         <line num="5" count="7" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
@@ -1170,16 +1170,16 @@
       </file>
       <file name="componentRender.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\lib\tests\componentRender.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="11" count="6" type="stmt"/>
-        <line num="15" count="21" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="21" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
+        <line num="15" count="27" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="27" type="stmt"/>
       </file>
     </package>
     <package name="src.common.lib.utils">
       <metrics statements="97" coveredstatements="56" conditionals="18" coveredconditionals="10" methods="27" coveredmethods="10"/>
       <file name="formValidate.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\lib\utils\formValidate.ts">
         <metrics statements="23" coveredstatements="20" conditionals="14" coveredconditionals="9" methods="2" coveredmethods="2"/>
-        <line num="3" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="3" count="8" type="cond" truecount="2" falsecount="0"/>
         <line num="4" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="5" count="3" type="stmt"/>
         <line num="6" count="3" type="stmt"/>
@@ -1195,81 +1195,81 @@
         <line num="24" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="25" count="0" type="stmt"/>
         <line num="28" count="3" type="stmt"/>
-        <line num="31" count="6" type="stmt"/>
+        <line num="31" count="8" type="stmt"/>
         <line num="32" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="34" count="3" type="stmt"/>
         <line num="36" count="3" type="cond" truecount="1" falsecount="1"/>
         <line num="37" count="0" type="stmt"/>
         <line num="40" count="3" type="stmt"/>
-        <line num="43" count="6" type="stmt"/>
+        <line num="43" count="8" type="stmt"/>
       </file>
       <file name="loanStatus.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\lib\utils\loanStatus.ts">
         <metrics statements="15" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="7" coveredmethods="1"/>
-        <line num="5" count="13" type="stmt"/>
+        <line num="5" count="15" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
-        <line num="9" count="13" type="stmt"/>
+        <line num="9" count="15" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
-        <line num="13" count="13" type="stmt"/>
+        <line num="13" count="15" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="17" count="13" type="stmt"/>
+        <line num="17" count="15" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
-        <line num="21" count="13" type="stmt"/>
+        <line num="21" count="15" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
-        <line num="25" count="13" type="stmt"/>
-        <line num="26" count="10" type="stmt"/>
-        <line num="29" count="13" type="stmt"/>
+        <line num="25" count="15" type="stmt"/>
+        <line num="26" count="12" type="stmt"/>
+        <line num="29" count="15" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="33" count="13" type="stmt"/>
+        <line num="33" count="15" type="stmt"/>
       </file>
       <file name="utils.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\lib\utils\utils.ts">
         <metrics statements="59" coveredstatements="27" conditionals="4" coveredconditionals="1" methods="18" coveredmethods="7"/>
-        <line num="1" count="14" type="stmt"/>
+        <line num="1" count="16" type="stmt"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
-        <line num="12" count="14" type="stmt"/>
-        <line num="13" count="10" type="stmt"/>
-        <line num="14" count="10" type="cond" truecount="1" falsecount="1"/>
-        <line num="17" count="14" type="stmt"/>
+        <line num="12" count="16" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="14" count="12" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="16" type="stmt"/>
         <line num="18" count="40" type="stmt"/>
-        <line num="21" count="14" type="stmt"/>
+        <line num="21" count="16" type="stmt"/>
         <line num="22" count="5" type="stmt"/>
-        <line num="25" count="14" type="stmt"/>
+        <line num="25" count="16" type="stmt"/>
         <line num="26" count="40" type="stmt"/>
-        <line num="29" count="14" type="stmt"/>
+        <line num="29" count="16" type="stmt"/>
         <line num="30" count="3" type="stmt"/>
-        <line num="32" count="14" type="stmt"/>
+        <line num="32" count="16" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
         <line num="34" count="0" type="stmt"/>
-        <line num="37" count="14" type="stmt"/>
+        <line num="37" count="16" type="stmt"/>
         <line num="38" count="102" type="stmt"/>
         <line num="40" count="102" type="stmt"/>
-        <line num="43" count="14" type="stmt"/>
+        <line num="43" count="16" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
         <line num="46" count="0" type="stmt"/>
         <line num="47" count="0" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
         <line num="49" count="0" type="stmt"/>
-        <line num="52" count="14" type="stmt"/>
+        <line num="52" count="16" type="stmt"/>
         <line num="53" count="6" type="stmt"/>
         <line num="54" count="6" type="stmt"/>
         <line num="55" count="6" type="stmt"/>
         <line num="56" count="6" type="stmt"/>
         <line num="57" count="6" type="stmt"/>
         <line num="58" count="6" type="stmt"/>
-        <line num="61" count="14" type="stmt"/>
+        <line num="61" count="16" type="stmt"/>
         <line num="62" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
         <line num="64" count="0" type="stmt"/>
-        <line num="67" count="14" type="stmt"/>
+        <line num="67" count="16" type="stmt"/>
         <line num="68" count="0" type="stmt"/>
         <line num="69" count="0" type="stmt"/>
         <line num="70" count="0" type="stmt"/>
-        <line num="74" count="14" type="stmt"/>
+        <line num="74" count="16" type="stmt"/>
         <line num="75" count="0" type="stmt"/>
         <line num="77" count="0" type="stmt"/>
         <line num="78" count="0" type="stmt"/>
@@ -1297,7 +1297,7 @@
       <metrics statements="10" coveredstatements="1" conditionals="7" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="Accordion.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Accordion\Accordion\Accordion.tsx">
         <metrics statements="10" coveredstatements="1" conditionals="7" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="17" count="10" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
         <line num="27" count="0" type="stmt"/>
         <line num="29" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
@@ -1313,7 +1313,7 @@
       <metrics statements="8" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="5" coveredmethods="0"/>
       <file name="AccordionList.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Accordion\AccordionList\AccordionList.tsx">
         <metrics statements="8" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="5" coveredmethods="0"/>
-        <line num="19" count="10" type="stmt"/>
+        <line num="19" count="12" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
@@ -1327,34 +1327,34 @@
       <metrics statements="5" coveredstatements="2" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="AppLink.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\AppLink\AppLink.tsx">
         <metrics statements="4" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="16" count="10" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
       </file>
       <file name="AppLink.types.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\AppLink\AppLink.types.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="10" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.common.ui.Button">
       <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
       <file name="Button.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Button\Button.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
-        <line num="16" count="11" type="stmt"/>
-        <line num="26" count="13" type="stmt"/>
-        <line num="28" count="13" type="stmt"/>
+        <line num="16" count="13" type="stmt"/>
+        <line num="26" count="16" type="stmt"/>
+        <line num="28" count="16" type="stmt"/>
       </file>
       <file name="Button.types.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Button\Button.types.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="3" count="11" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
       </file>
     </package>
     <package name="src.common.ui.Checkbox">
       <metrics statements="5" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="Checkbox.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Checkbox\Checkbox.tsx">
         <metrics statements="5" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="13" count="10" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
@@ -1365,7 +1365,7 @@
       <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="Divider.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Divider\Divider\Divider.tsx">
         <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="7" count="10" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
       </file>
@@ -1374,7 +1374,7 @@
       <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
       <file name="DividerList.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Divider\DividerList\DividerList.tsx">
         <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="10" count="10" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
@@ -1384,7 +1384,7 @@
       <metrics statements="3" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="ErrorMessage.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\ErrorMessage\ErrorMessage.tsx">
         <metrics statements="3" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="13" count="10" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
         <line num="14" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="16" count="0" type="stmt"/>
       </file>
@@ -1393,7 +1393,7 @@
       <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="InfoMessage.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\InfoMessage\InfoMessage.tsx">
         <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="12" count="10" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
       </file>
@@ -1402,7 +1402,7 @@
       <metrics statements="4" coveredstatements="4" conditionals="17" coveredconditionals="17" methods="1" coveredmethods="1"/>
       <file name="Input.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Input\Input\Input.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="17" coveredconditionals="17" methods="1" coveredmethods="1"/>
-        <line num="16" count="10" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
         <line num="28" count="248" type="stmt"/>
         <line num="30" count="248" type="stmt"/>
         <line num="37" count="248" type="stmt"/>
@@ -1412,7 +1412,7 @@
       <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="InputAmount.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Input\InputAmount\InputAmount.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="10" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
         <line num="12" count="40" type="stmt"/>
         <line num="14" count="40" type="stmt"/>
       </file>
@@ -1421,8 +1421,8 @@
       <metrics statements="23" coveredstatements="2" conditionals="9" coveredconditionals="0" methods="7" coveredmethods="0"/>
       <file name="InputPin.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Input\InputPin\InputPin.tsx">
         <metrics statements="23" coveredstatements="2" conditionals="9" coveredconditionals="0" methods="7" coveredmethods="0"/>
-        <line num="12" count="10" type="stmt"/>
-        <line num="14" count="10" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
         <line num="15" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="16" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
@@ -1450,7 +1450,7 @@
       <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
       <file name="InputRange.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Input\InputRange\InputRange.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="6" coveredconditionals="6" methods="1" coveredmethods="1"/>
-        <line num="10" count="10" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
         <line num="12" count="20" type="stmt"/>
         <line num="14" count="20" type="stmt"/>
         <line num="16" count="20" type="stmt"/>
@@ -1460,7 +1460,7 @@
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Label.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Label\Label.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="11" count="10" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
         <line num="12" count="60" type="stmt"/>
         <line num="14" count="60" type="stmt"/>
         <line num="16" count="60" type="stmt"/>
@@ -1470,7 +1470,7 @@
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="Loader.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Loader\Loader.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="11" type="stmt"/>
+        <line num="3" count="13" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
       </file>
     </package>
@@ -1478,8 +1478,8 @@
       <metrics statements="32" coveredstatements="2" conditionals="14" coveredconditionals="0" methods="8" coveredmethods="0"/>
       <file name="Modal.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Modal\Modal.tsx">
         <metrics statements="32" coveredstatements="2" conditionals="14" coveredconditionals="0" methods="8" coveredmethods="0"/>
-        <line num="16" count="10" type="stmt"/>
-        <line num="18" count="10" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="22" count="0" type="stmt"/>
@@ -1516,7 +1516,7 @@
       <metrics statements="3" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="Portal.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Portal\Portal.tsx">
         <metrics statements="3" coveredstatements="1" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="9" count="10" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
         <line num="10" count="0" type="cond" truecount="0" falsecount="1"/>
         <line num="12" count="0" type="stmt"/>
       </file>
@@ -1525,7 +1525,7 @@
       <metrics statements="9" coveredstatements="8" conditionals="14" coveredconditionals="8" methods="3" coveredmethods="3"/>
       <file name="Select.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Select\Select.tsx">
         <metrics statements="9" coveredstatements="8" conditionals="14" coveredconditionals="8" methods="3" coveredmethods="3"/>
-        <line num="21" count="10" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
         <line num="33" count="110" type="stmt"/>
         <line num="35" count="110" type="stmt"/>
         <line num="37" count="110" type="stmt"/>
@@ -1540,7 +1540,7 @@
       <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
       <file name="Skeleton.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Skeleton\Skeleton.tsx">
         <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="12" count="10" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
@@ -1550,7 +1550,7 @@
       <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="Tabs.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Tabs\Tabs.tsx">
         <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="13" count="10" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
@@ -1562,8 +1562,8 @@
       <metrics statements="12" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="Tooltip.tsx" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\common\ui\Tooltip\Tooltip.tsx">
         <metrics statements="12" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="5" count="10" type="stmt"/>
-        <line num="12" count="10" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
         <line num="15" count="0" type="stmt"/>
@@ -1580,10 +1580,10 @@
       <metrics statements="38" coveredstatements="12" conditionals="12" coveredconditionals="0" methods="12" coveredmethods="2"/>
       <file name="currencySlice.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\store\slices\currencySlice.ts">
         <metrics statements="20" coveredstatements="6" conditionals="8" coveredconditionals="0" methods="6" coveredmethods="1"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="5" count="6" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
-        <line num="24" count="6" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
@@ -1592,8 +1592,8 @@
         <line num="41" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="42" count="0" type="stmt"/>
         <line num="44" count="0" type="stmt"/>
-        <line num="49" count="6" type="stmt"/>
-        <line num="54" count="6" type="stmt"/>
+        <line num="49" count="8" type="stmt"/>
+        <line num="54" count="8" type="stmt"/>
         <line num="56" count="0" type="stmt"/>
         <line num="57" count="0" type="stmt"/>
         <line num="62" count="0" type="stmt"/>
@@ -1603,18 +1603,18 @@
       </file>
       <file name="newsSlice.ts" path="C:\Users\79876\OneDrive\Рабочий стол\Neoflex\neo2\Bank\src\store\slices\newsSlice.ts">
         <metrics statements="18" coveredstatements="6" conditionals="4" coveredconditionals="0" methods="6" coveredmethods="1"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="5" count="6" type="stmt"/>
-        <line num="27" count="6" type="stmt"/>
-        <line num="33" count="6" type="stmt"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="27" count="8" type="stmt"/>
+        <line num="33" count="8" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
         <line num="40" count="0" type="stmt"/>
         <line num="41" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="44" count="0" type="stmt"/>
-        <line num="49" count="6" type="stmt"/>
-        <line num="54" count="6" type="stmt"/>
+        <line num="49" count="8" type="stmt"/>
+        <line num="54" count="8" type="stmt"/>
         <line num="56" count="0" type="stmt"/>
         <line num="57" count="0" type="stmt"/>
         <line num="60" count="0" type="stmt"/>
