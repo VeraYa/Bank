@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.11% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>1/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">11.11% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>1/9</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -94,23 +94,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">11x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { createAsyncThunk } from '@reduxjs/toolkit'
@@ -123,19 +123,19 @@ export const applyOffer = createAsyncThunk&lt;
   void,
   IOfferData,
   { rejectValue: string }
-&gt;('offer/applyOffer', <span class="fstat-no" title="function not covered" >as</span>ync (data, thunkAPI) =&gt; {
-  const { dispatch, rejectWithValue } = <span class="cstat-no" title="statement not covered" >thunkAPI</span>
-<span class="cstat-no" title="statement not covered" >  try {</span>
-    const response = <span class="cstat-no" title="statement not covered" >await mainApi.post('application/apply', data)</span>
+&gt;('offer/applyOffer', async (data, thunkAPI) =&gt; {
+  const { dispatch, rejectWithValue } = thunkAPI
+  try {
+    const response = await mainApi.post('application/apply', data)
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (!response || response.status !== 200) {</span>
-<span class="cstat-no" title="statement not covered" >      throw new Error('Sorry, failed to send the data!')</span>
+    if (!response || response.status !== 200) {
+      throw new Error('Sorry, failed to send the data!')
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    dispatch(loanStatusActions.setStep(3))</span>
-<span class="cstat-no" title="statement not covered" >    dispatch(loanStatusActions.setApplicationId(data.applicationId))</span>
+    dispatch(loanStatusActions.setStep(3))
+    dispatch(loanStatusActions.setApplicationId(data.applicationId))
   } catch (e) {
-<span class="cstat-no" title="statement not covered" >    return rejectWithValue(errorHandler(e))</span>
+    return rejectWithValue(errorHandler(e))
   }
 })
 &nbsp;</pre></td></tr></table></pre>
@@ -145,7 +145,7 @@ export const applyOffer = createAsyncThunk&lt;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-01-22T13:51:45.961Z
+                at 2025-01-22T19:49:21.607Z
             </div>
         <script src="../../../../../../../prettify.js"></script>
         <script>
