@@ -86,6 +86,7 @@ export const NewsSlider: React.FC = () => {
                     onClick={handlePrev}
                     disabled={currentIndex === 0}
                     className="slider__button prev-btn"
+                    data-testid="prev-button"
                 >
                     <SliderIcon />
                 </button>

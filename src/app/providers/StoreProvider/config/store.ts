@@ -12,24 +12,36 @@ import { scoringReducer } from '@widgets/ScoringForm'
 import { scheduleReducer } from '@widgets/ScheduleTable'
 import currencyReducer from '@store/slices/currencySlice';
 import newsReducer from "@store/slices/newsSlice";
+import { ReducersMapObject } from '@reduxjs/toolkit'
 
-export const createReduxStore = (initialState?: IStateSchema) => {
-  return configureStore<IStateSchema>({
-    reducer: {
-      loanStatus: loanStatusReducer,
-      prescoring: prescoringReducer,
-      offer: offerReducer,
-      scoring: scoringReducer,
-      schedule: scheduleReducer,
-      deny: denyReducer,
-      documents: documentsReducer,
-      code: codeReducer,
-      currency: currencyReducer,
-      news: newsReducer,
-    },
-    devTools: import.meta.env.MODE === 'development',
-    preloadedState: initialState
+export function createReduxStore(
+  initialState?: IStateSchema,
+  asyncReducers?: ReducersMapObject<IStateSchema>
+) {
+  const rootReducers: ReducersMapObject<IStateSchema> = {
+    ...asyncReducers,
+    loanStatus: loanStatusReducer,
+    prescoring: prescoringReducer,
+    offer: offerReducer,
+    scoring: scoringReducer,
+    schedule: scheduleReducer,
+    deny: denyReducer,
+    documents: documentsReducer,
+    code: codeReducer,
+    currency: currencyReducer,
+    news: newsReducer,
+  }
+
+  const store = configureStore({
+    reducer: rootReducers,
+    preloadedState: initialState,
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+      serializableCheck: false
+    }),
+    devTools: process.env.NODE_ENV === 'development'
   })
+
+  return store
 }
 
 export type AppDispatch = ReturnType<typeof createReduxStore>['dispatch']
